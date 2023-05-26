@@ -21,8 +21,7 @@ nwn-nasher-types = "0.2"
 
 ```rust
 use nwn_nasher_types::*;
-use serde_json::*;
-use std::fs;
+
 fn main() {
   let path = "src/module.ifo";
   let file = NwType::from_file_path(path).expect("Failed to open file");
