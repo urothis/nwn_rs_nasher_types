@@ -1,3 +1,6 @@
+//! # Module information
+//! Structs for the `ifo` file format
+
 use rust_decimal::Decimal;
 use serde::{Deserialize, Serialize};
 use serde_json::Value;

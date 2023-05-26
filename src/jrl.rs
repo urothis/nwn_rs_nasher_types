@@ -1,3 +1,6 @@
+//! # Journal
+//! Structs for the `jrl` file format
+
 use serde::{Deserialize, Serialize};
 
 use super::*;

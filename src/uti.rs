@@ -1,3 +1,6 @@
+//! # Item
+//! Structs for the `uti` file format
+
 use serde::{Deserialize, Serialize};
 
 use super::*;

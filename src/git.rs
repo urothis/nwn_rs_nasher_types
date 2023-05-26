@@ -1,3 +1,6 @@
+//! # Area information
+//! Structs for the `git` file format
+
 use rust_decimal::Decimal;
 use serde::{Deserialize, Serialize};
 

@@ -1,3 +1,6 @@
+//! # Palette
+//! Structs for the `itp` file format
+
 use rust_decimal::Decimal;
 use serde::{Deserialize, Serialize};
 

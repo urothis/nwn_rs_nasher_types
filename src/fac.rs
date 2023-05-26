@@ -1,3 +1,6 @@
+//! # Faction
+//! Structs for the `fac` file format
+
 use serde::{Deserialize, Serialize};
 
 use super::*;

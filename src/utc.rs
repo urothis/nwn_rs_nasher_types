@@ -1,3 +1,6 @@
+//! # Creature
+//! Structs for the `utc` file format
+
 use rust_decimal::Decimal;
 use serde::{Deserialize, Serialize};
 

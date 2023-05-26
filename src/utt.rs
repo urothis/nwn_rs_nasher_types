@@ -1,3 +1,6 @@
+//! # Trigger
+//! Structs for the `utt` file format
+
 use rust_decimal::Decimal;
 use serde::{Deserialize, Serialize};
 

@@ -1,3 +1,6 @@
+//! # Dialog
+//! Structs for the `dlg` file format
+
 use serde::{Deserialize, Serialize};
 
 use super::*;
@@ -13,19 +16,19 @@ pub struct Dlg {
     #[serde(skip_serializing_if = "Option::is_none", rename = "EndConversation")]
     pub end_conversation: Option<NwValue<String>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "EntryList")]
-    pub entry_list: Option<NwValue<Vec<NwDialogEntry>>>,
+    pub entry_list: Option<NwValue<Vec<Entry>>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "NumWords")]
     pub num_words: Option<NwValue<u32>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "PreventZoomIn")]
     pub prevent_zoom_in: Option<NwValue<u8>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "ReplyList")]
-    pub reply_list: Option<NwValue<Vec<NwDialogReplyEntry>>>,
+    pub reply_list: Option<NwValue<Vec<ReplyEntry>>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "StartingList")]
-    pub starting_list: Option<NwValue<Vec<NwAreaStartingList>>>,
+    pub starting_list: Option<NwValue<Vec<StartingList>>>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct NwDialogEntry {
+pub struct Entry {
     #[serde(skip_serializing_if = "Option::is_none", rename = "__struct_id")]
     pub struct_id: Option<u32>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "Animation")]
@@ -41,9 +44,9 @@ pub struct NwDialogEntry {
     #[serde(skip_serializing_if = "Option::is_none", rename = "QuestEntry")]
     pub quest_entry: Option<NwValue<u32>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "RepliesList")]
-    pub replies_list: Option<NwValue<Vec<NwDialogReply>>>,
+    pub replies_list: Option<NwValue<Vec<Reply>>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "EntriesList")]
-    pub entries_list: Option<NwValue<Vec<NwAreaReplyEntry>>>,
+    pub entries_list: Option<NwValue<Vec<EntryReply>>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "Script")]
     pub script: Option<NwValue<String>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "Sound")]
@@ -73,7 +76,7 @@ pub struct Text {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct NwDialogReplyEntry {
+pub struct ReplyEntry {
     #[serde(skip_serializing_if = "Option::is_none", rename = "__struct_id")]
     pub struct_id: Option<u32>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "Animation")]
@@ -85,13 +88,13 @@ pub struct NwDialogReplyEntry {
     #[serde(skip_serializing_if = "Option::is_none", rename = "Delay")]
     pub delay: Option<NwValue<u32>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "EntriesList")]
-    pub entries_list: Option<NwValue<Vec<NwAreaReplyEntry>>>,
+    pub entries_list: Option<NwValue<Vec<EntryReply>>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "Quest")]
     pub quest: Option<NwValue<String>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "QuestEntry")]
     pub quest_entry: Option<NwValue<u32>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "RepliesList")]
-    pub replies_list: Option<NwValue<Vec<NwDialogReply>>>,
+    pub replies_list: Option<NwValue<Vec<Reply>>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "Script")]
     pub script: Option<NwValue<String>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "Sound")]
@@ -105,7 +108,7 @@ pub struct NwDialogReplyEntry {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct NwAreaReplyEntry {
+pub struct EntryReply {
     #[serde(rename = "__struct_id")]
     pub struct_id: u8,
     #[serde(skip_serializing_if = "Option::is_none", rename = "Active")]
@@ -120,7 +123,7 @@ pub struct NwAreaReplyEntry {
 
 //
 #[derive(Debug, Serialize, Deserialize)]
-pub struct NwDialogReply {
+pub struct Reply {
     #[serde(rename = "__struct_id")]
     pub struct_id: u8,
     #[serde(skip_serializing_if = "Option::is_none", rename = "Active")]
@@ -134,7 +137,7 @@ pub struct NwDialogReply {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-pub struct NwAreaStartingList {
+pub struct StartingList {
     #[serde(rename = "__struct_id")]
     pub struct_id: u32,
     #[serde(skip_serializing_if = "Option::is_none", rename = "Active")]

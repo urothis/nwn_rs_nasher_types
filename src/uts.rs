@@ -1,3 +1,6 @@
+//! # Sound
+//! Structs for the `uts` file format
+
 use rust_decimal::Decimal;
 use serde::{Deserialize, Serialize};
 

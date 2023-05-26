@@ -1,3 +1,34 @@
+//! # Neverwinter Nights decompiled module file reader and writer
+//!
+//! A library that provides serialization of Neverwinter Nights module json files generated via [Nasher](https://github.com/squattingmonk/nasher)
+//! This should allow for the creation of a Rust based module tooling.
+//!
+//! ## Usage
+//! Add the following to your `Cargo.toml`:
+//! ```toml
+//! [dependencies]
+//! nwn-nasher-types = "0.2"
+//! ```
+//! ## Example
+//! ```rust
+//! use nwn_nasher_types::*;
+//! use serde_json::*;
+//! use std::fs;
+//!
+//! fn main() {
+//!   let path = "src/module.ifo";
+//!
+//!   let file = NwType::from_file_path(path).expect("Failed to open file");
+//!   match nw {
+//!     Ok(value) => {
+//!       println!("Value: {:?}", value);
+//!     }
+//!     Err(e) => {
+//!       panic!("Failed to deserialize {:?}: {}", path, e);
+//!     }
+//!   }
+//! }
+//! ```
 pub mod are;
 pub mod dlg;
 pub mod fac;
@@ -18,15 +49,12 @@ pub mod utw;
 
 use serde::{Deserialize, Serialize};
 
-/// A library for reading and writing Neverwinter Nights module files generated from Nasher https://github.com/squattingmonk/nasher
-/// The goal is this library is to allow for the reading and writing of these json files in such a fashion as to not replace nasher, but to hook into it for building.
-/// This should allow for the creation of a Rust based module builder that can be used to create modules for Neverwinter Nights.
-
+/// Neverwinter Nights file types
 #[derive(Serialize, Deserialize)]
 #[serde(tag = "__data_type")]
 pub enum NwType {
     #[serde(alias = "ARE ", rename = "ARE ")]
-    Area(are::Are),
+    Area(are::Area),
     #[serde(alias = "DLG ", rename = "DLG ")]
     Dialog(dlg::Dlg),
     #[serde(alias = "FAC ", rename = "FAC ")]
@@ -48,7 +76,7 @@ pub enum NwType {
     #[serde(alias = "UTE ", rename = "UTE ")]
     Encounter(ute::Ute),
     #[serde(alias = "UTI ", rename = "UTI ")]
-    ItemBlueprint(uti::Uti),
+    Item(uti::Uti),
     #[serde(alias = "UTM ", rename = "UTM ")]
     Store(utm::Utm),
     #[serde(alias = "UTP ", rename = "UTP ")]
@@ -62,6 +90,22 @@ pub enum NwType {
 }
 
 impl NwType {
+    /// Returns a new NwType from a file path.
+    pub fn from_file_path(path: &str) -> Result<Self, serde_json::Error> {
+        let file = std::fs::File::open(&path).expect("Failed to open file");
+        serde_json::from_reader(file)
+    }
+
+    /// Returns a new NwType from a file reader.
+    pub fn from_reader<R: std::io::Read>(reader: R) -> Result<Self, serde_json::Error> {
+        serde_json::from_reader(reader)
+    }
+
+    /// Returns a new NwType from a string.
+    pub fn from_str(s: &str) -> Result<Self, serde_json::Error> {
+        serde_json::from_str(s)
+    }
+
     pub fn get_type(&self) -> String {
         match self {
             NwType::Area(_) => "ARE".to_string(),
@@ -75,7 +119,7 @@ impl NwType {
             NwType::Creature(_) => "UTC".to_string(),
             NwType::Door(_) => "UTD".to_string(),
             NwType::Encounter(_) => "UTE".to_string(),
-            NwType::ItemBlueprint(_) => "UTI".to_string(),
+            NwType::Item(_) => "UTI".to_string(),
             NwType::Store(_) => "UTM".to_string(),
             NwType::Placeable(_) => "UTP".to_string(),
             NwType::Sound(_) => "UTS".to_string(),

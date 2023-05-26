@@ -1,12 +1,13 @@
+//! # Area comments
+//! Structs for the `gic` file format
+
 use serde::{Deserialize, Serialize};
 use super::*;
 
 /// Gic is a struct that represents area comments
-///
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Gic {
     /// Creature List is a list of creatures
-    ///
     #[serde(skip_serializing_if = "Option::is_none", rename = "Creature List")]
     pub creature_list: Option<NwValue<Vec<Comment>>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "Door List")]

@@ -1,3 +1,6 @@
+//! # Store
+//! Structs for the `utm` file format
+
 use serde::{Deserialize, Serialize};
 
 use super::*;

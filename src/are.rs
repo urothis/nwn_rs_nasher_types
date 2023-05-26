@@ -1,10 +1,14 @@
+//! # Area
+//! Structs for the `are` file format
+
 use rust_decimal::Decimal;
 use serde::{Deserialize, Serialize};
 
 use super::*;
 
+/// Area struct
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Are {
+pub struct Area {
     #[serde(skip_serializing_if = "Option::is_none", rename = "ChanceLightning")]
     pub chance_lightning: Option<NwValue<i32>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "ChanceRain")]
@@ -48,7 +52,7 @@ pub struct Are {
     #[serde(skip_serializing_if = "Option::is_none", rename = "MoonShadows")]
     pub moon_shadows: Option<NwValue<u8>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "Name")]
-    pub name: Option<NwValue<Name>>,
+    pub name: Option<NwValue<super::LocalizedText>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "NoRest")]
     pub no_rest: Option<NwValue<u8>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "OnEnter")]
@@ -80,7 +84,7 @@ pub struct Are {
     #[serde(skip_serializing_if = "Option::is_none", rename = "Tag")]
     pub tag: Option<NwValue<String>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "Tile_List")]
-    pub tile_list: Option<NwValue<Vec<NwAreaTile>>>,
+    pub tile_list: Option<NwValue<Vec<Tile>>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "Tileset")]
     pub tileset: Option<NwValue<String>>,
     #[serde(skip_serializing_if = "Option::is_none", rename = "Width")]
@@ -89,26 +93,9 @@ pub struct Are {
     pub wind_power: Option<NwValue<i32>>,
 }
 
+/// Area Tile struct
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Name {
-    #[serde(skip_serializing_if = "Option::is_none", rename = "0")]
-    pub english: Option<String>,
-    #[serde(skip_serializing_if = "Option::is_none", rename = "1")]
-    pub french: Option<String>,
-    #[serde(skip_serializing_if = "Option::is_none", rename = "2")]
-    pub german: Option<String>,
-    #[serde(skip_serializing_if = "Option::is_none", rename = "3")]
-    pub italian: Option<String>,
-    #[serde(skip_serializing_if = "Option::is_none", rename = "4")]
-    pub spanish: Option<String>,
-    #[serde(skip_serializing_if = "Option::is_none", rename = "5")]
-    pub polish: Option<String>,
-    #[serde(skip_serializing_if = "Option::is_none", rename = "id")]
-    pub id: Option<u32>,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
-pub struct NwAreaTile {
+pub struct Tile {
     #[serde(rename = "__struct_id")]
     pub struct_id: u8,
     #[serde(skip_serializing_if = "Option::is_none", rename = "Tile_AnimLoop1")]

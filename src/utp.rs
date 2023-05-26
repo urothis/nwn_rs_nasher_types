@@ -1,3 +1,6 @@
+//! # Placeable
+//! Structs for the `utp` file format
+
 use serde::{Deserialize, Serialize};
 
 use super::*;

@@ -1,3 +1,6 @@
+//! # Door
+//! Structs for the `utd` file format
+
 use serde::{Deserialize, Serialize};
 
 use super::*;
