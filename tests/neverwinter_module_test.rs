@@ -74,7 +74,6 @@ fn test_modules() {
     let test_end = std::time::Instant::now();
     let test_duration = test_end.duration_since(test_start);
     println!("Test duration: {:?}", test_duration);
-    panic!("Test Success");
 }
 
 const VARIANTS: [&str; 17] = [
