@@ -231,7 +231,7 @@ pub fn serialize(path: String) {
     match path.exists() {
         true => {
             let file = fs::File::open(&path).expect("Failed to open file");
-            let nw: Result<types::NwType, _> = serde_json::from_reader(file);
+            let nw: Result<NwType, _> = serde_json::from_reader(file);
             match nw {
                 Ok(_) => {}
                 Err(e) => {
@@ -251,7 +251,7 @@ pub fn round_trip(path: String) {
         true => {
             let file = fs::File::open(&path).expect("Failed to open file");
 
-            let nw: Result<types::NwType, _> = serde_json::from_reader(file);
+            let nw: Result<NwType, _> = serde_json::from_reader(file);
             match nw {
                 Ok(value) => {
                     // serialize

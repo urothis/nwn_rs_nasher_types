@@ -64,9 +64,9 @@ fn test_modules() {
 
     // print the results
     for (module_name, parsed) in &files_parsed {
-      println!("Module: {}", module_name);
+      eprintln!("Module: {}", module_name);
       for variant in VARIANTS.iter() {
-        println!("{}: {}", variant, parsed.iter().filter(|(v, _)| v == variant).count());
+        eprintln!("{}: {}", variant, parsed.iter().filter(|(v, _)| v == variant).count());
       }
     }
 
@@ -74,7 +74,7 @@ fn test_modules() {
     let test_end = std::time::Instant::now();
     let test_duration = test_end.duration_since(test_start);
     println!("Test duration: {:?}", test_duration);
-
+    panic!("Test Success");
 }
 
 const VARIANTS: [&str; 17] = [
@@ -87,7 +87,7 @@ pub fn serialize(path: String) {
     match path.exists() {
         true => {
             let file = fs::File::open(&path).expect("Failed to open file");
-            let nw: Result<types::NwType, _> = serde_json::from_reader(file);
+            let nw: Result<NwType, _> = serde_json::from_reader(file);
             match nw {
                 Ok(_) => {}
                 Err(e) => {
@@ -107,7 +107,7 @@ pub fn round_trip(path: String) {
         true => {
             let file = fs::File::open(&path).expect("Failed to open file");
 
-            let nw: Result<types::NwType, _> = serde_json::from_reader(file);
+            let nw: Result<NwType, _> = serde_json::from_reader(file);
             match nw {
                 Ok(value) => {
                     // serialize
