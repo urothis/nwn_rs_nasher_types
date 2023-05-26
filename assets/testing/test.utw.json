@@ -1,0 +1,54 @@
+{
+  "__data_type": "UTW ",
+  "Appearance": {
+    "type": "byte",
+    "value": 3
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "A reckless adventurer's corpse!"
+    }
+  },
+  "HasMapNote": {
+    "type": "byte",
+    "value": 1
+  },
+  "LinkedTo": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "pcorpsenote1",
+      "id": 14817
+    }
+  },
+  "MapNote": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "A reckless adventurer's corpse!"
+    }
+  },
+  "MapNoteEnabled": {
+    "type": "byte",
+    "value": 1
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 5
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "pcorpsenote1"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "pcorpsenote1"
+  }
+}

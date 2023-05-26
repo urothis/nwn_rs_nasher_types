@@ -1,0 +1,3873 @@
+{
+  "__data_type": "IFO ",
+  "Expansion_Pack": {
+    "type": "word",
+    "value": 3
+  },
+  "Mod_Area_list": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thewelloferu"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theprancingpo001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theprancingpo002"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "greateastroada"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "greateastroadb"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "greateastroadc"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thelandinntown"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "greateastroadd"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "foothillsofthemi"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "themistymountain"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "themistymount001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "carrok"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "carroklesser"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "carrokgreater"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "icequeenlair"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "icequeennest"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "goblingatelesser"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "goblingatemines"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "gollumscave"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "goblingategreate"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "goblintownwarren"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "goblintownmainha"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "angmar"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "mountgundabad001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "mountgundabadlev"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theangmarmountai"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thetrollshalls"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thewitchkingsthr"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "carndum"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "carndumcity"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "greenwaysouth"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thebarrowdowns"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "tombofgarmir"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "tombofperan001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "tombofperan002"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "tombofperan003"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "tombofperan004"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "tombofperan005"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "tombofperan006"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "greenwaysoutheas"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "sharkeyschamber"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "sharkeysmill"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "templeofilluvata"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "tharbadbridge"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "tharbadwest001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thardbadeast"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thealtar"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theelvenglassinn"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theloft"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "towerofalatar"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "planeoftherender"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "cardolan"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dwarrowdelfeast"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "morialevel1cente"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "morialevel1east"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "morialevel1north"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "morialevel1south"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thedimrillstair"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theentrancetomor"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thegatesofmoria"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "infestedgrove"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "lastinn001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "madeyemoodysstor"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "midgewaterswamp"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "rivendell"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "rivendellupperha"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thesmithyofriven"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thestedwaresiden"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thevalleyofriven"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dunland"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "edoras"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "gapofrohancentra"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "gapofrohanwest"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "helmsdeep"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "isengardouterrim"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "lowynssmithy"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theodenshall"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "taggetssmithshop"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "breecave"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "greenwaynorth"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "ruinsofannuminas"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "billfernyshouse"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dunlandwarparty"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "enchantedcavern"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "carndumsmithy"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "carndumtemple"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "isengardinnerrim"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "toweroforthanc"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "towerofothancsar"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "isengardmagicroo"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "carndumthrone"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theendlessstair"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theendlesssta001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theendlesssta002"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theendlesssta003"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theendlesssta004"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theendlesssta005"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theendlesssta006"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theendlesssta007"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theabyssofmoria"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thebalrogofmoria"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "balinstomb"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dwarrowdelfea001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "chamberofrecords"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "durinsbridge"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "moriagateeast"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "silverlodestream"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "lothloriennorth"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "lothloriencenter"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "lothlorienflets"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "greateastroade"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "mirkwoodwest"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "mirkwoodcentral"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "mirkwoodeast"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "celeduinbanks"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "laketown"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "laketownthetipss"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "mirkwoodcentrals"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theruinsofdale"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thelonelymountai"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "lonelymountainma"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "halloftruth"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thehallsoftruth"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "bree"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "darkcave"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "kallristcryptlow"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "kallristcryptupp"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "kallristdarkrim"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "kallristeastshor"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "kallristinner"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "kallristnorthsho"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "kallristouterban"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "kallristsouthsho"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "kallristwestshor"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "mirkwoodcentrale"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thesilvermountai"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thesilvermoun001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "gapofrohaneast"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dankcave"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "kithacorwoods"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "fangornoutskirts"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thecelebrantrive"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "lorienforrestout"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "kerufallslair"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thestinkinsewer"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "gondorwesta"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "gondorwestb"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thepelennorfield"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "minastitithgates"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "tharbadarena"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "osgilaithbridge"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "eredduathroada"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thesecretpassofm"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "shelobslair"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thecirithungolpa"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "watchmandefender"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "cirithungol"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thewold"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "woldsouth"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "breecrypt"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "breecryptlowerle"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "breecaverns"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "m3q4a"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "m3q4b"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "m3q4c"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "m3q4d"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "m3q4da"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "m3q4e"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "m3q4ea"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "m3q4f"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "m3q4g"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "m3q4ga"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "m3q4gb"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "m3q4ha"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "m3q4hb"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "m3q4hc"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "map_m3q4a2"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "plano"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "house000"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area004"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dankcavern"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "templeofhoward"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "battlegrounds"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "angmardungeon"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "battlegroundserk"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "tinsteranoshf001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thegraveyard"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dragonfields"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dragonsbridge"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dragongatedef001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "helmsdeepcaves"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "helpsdeepcavesle"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "helmsdeepcavesna"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "helmsdeepcavesle"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "cheaterholdingpe"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "cheattestingg001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "angmartemplesewe"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "unknownswamp"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "angmarunknowndep"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "cowlevel"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "deadmarshesshack"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "deadmarshcrypt"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "ungol"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "banesbarn001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "baneshome"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "bradyhall"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "favitsshop"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "fieldsoftheshire"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "fightersbarracks"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "houseofhealing"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "murdockshouse"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "shire"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "northithilien"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "angmarboxofdeath"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "entrancetomountd"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "gondorianhome"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "mountdoomcaves"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "mountdoomlavaven"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "mountdoomsecretc"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "mountdoomdeeperc"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "anothercrypt"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area002"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area003"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area005"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area006"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "minasmorgulgroun"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "minasmorgultower"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "minasmorgulto001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "minasmorgulupper"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "pathtominasmorgu"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "osgilaithwest001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thesilvermoun002"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "weathertophills"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "weathertop"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theforgeofmountd"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "drowcave"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "laketownbankandt"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thedyeshop"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "deepdrowcaves"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "sewersofminastir"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "minastirithth001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "minastirithgreat"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thecatacombsofmi"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "hallofmirrors"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "gaurdhouse01"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "minasmorgallongh"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "minasmorgullandi"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theguardianguild"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "eredduathroadcam"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thedeepcatacombs"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "drowcaves"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "drowdepths"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "silvermountainsu"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area007"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area008"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "eredmithrincitad"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "eredmithrincaves"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "ironcitadeltempl"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "planeofthecitade"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "eredmithrinsmall"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area009"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "towerofcirithung"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "towerofcirith001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area010"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "stoneroom001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "stoneroom002"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "stoneroom003"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "stoneroom004"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "stoneroom005"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "stoneroom006"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "cirithungolbasem"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "eredmithrindeepc"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area011"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "itemexchangearea"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "eastbankofbrandy"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area012"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area013"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area014"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area015"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area017"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "mountgundabad002"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area016"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area018"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area019"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thewallsofdolgul"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dolguldur001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area020"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dolguldurtower"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "assguildx1"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "southernswamps"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area021"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area022"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area023"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area024"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "corsairbeachhead"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "corsaircampsite"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "northbeachofhada"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "cliffcavesofharo"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area025"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "deepcliffsofharo"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "lostdrowcave"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "breefields"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "testa"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "deepinfangorefor"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "lowercrypt"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "gateoftheblackto"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area026"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "fangorncave"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "formiancaves"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "icewizarden"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "unknownfrozenwas"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "cryptentrance"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "unknowncrypt"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "morgothsbridge"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "furyplatoonlo001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "furyplatoonlobby"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "morgothstnghold"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "towerofmorgoth"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "morgothallofdth"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "morghtupperhall"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "planarmaze"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area027"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area028"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "depthsofthetower"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "planarnightmare"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "theinnerbastiono"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "planardeathbox"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "drownook"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area029"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "erdmithden"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area030"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "baraddurcell1"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "baraddurcell101"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "baraddurcell102"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "baraddurcell103"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "baraddurcell104"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "baraddurcell105"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "baraddurcell106"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "baradtraprm1"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "baradtraprm2"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "baradtraprm3"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "baradtraprm4"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "baradtraprm5"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "brdurrunedhwlly1"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "brddurdownsa"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "brdcloistera"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "brdgrthallway"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "planarplayroom"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "area032"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "unknownmoriadept"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "unknownmoriad001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "unknownmoriad002"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dunlandcastlelan"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dunlandrural"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "tropicalharondor"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dunlandwizardtow"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dunlandwizard001"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dunlandwizard003"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dunlandcastleout"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dunlandcastlecit"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "dunlandinnercast"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "thenoddingboarin"
+        }
+      },
+      {
+        "__struct_id": 6,
+        "Area_Name": {
+          "type": "resref",
+          "value": "mylittlepony"
+        }
+      }
+    ]
+  },
+  "Mod_CacheNSSList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "bartenderonconvo"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "breetele"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "carntele"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "chest_respawner"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "clean_store"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "close_door"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "close_doorfst"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "close_relock"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "close_relock_slo"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "close_relockfast"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "close_relultfast"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "close_uf_relock"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "denathorflee1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "denethpercep1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "denthblock1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "denthcombat1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "denthrunaway1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "denthspell1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "destroy_deth"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "devinering1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "dmfi_activate"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "dmfi_voice_exe"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "dmfxew_activate"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "edortele"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "eiladjust"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "elfprotecreturn1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "elfprotecreturn2"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "enterwelloferu1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "flmingdragon1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "glyphward1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "gondortele"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "goodadjuster"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "guardiancheat1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "heartrid"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "isentele"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "laketele"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "leavingthewell1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "lonetele"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "lord_dummy"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "lothtele"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "lts_emitter_hbt"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "m2q2_randomwalk"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "me_on_enter"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "me_on_leave"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "mtcatghost1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "mtsewerdrown1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "mtsewerempty1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "mtstartflood"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nazgulseekndest1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "noidleinwell1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nospellinwell"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nosummoninwell"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nukespawnedmonst"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_c2_default1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_c2_default2"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_c2_default3"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_c2_default4"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_c2_default5"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_c2_default6"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_c2_default7"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_c2_default9"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_c2_defaultb"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_c2_defaulte"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_ch_ac1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_ch_ac2"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_ch_ac4"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_g0_transition"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_o2_dtwalldoor"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_o2_gargoyle"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_o2_skeleton"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_o2_trapdoor"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_o2_zombie"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_s0_chlightn"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_s0_horrwilt"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_s0_magmiss"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_s0_stormveng"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_s0_timestop"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_s1_auracoldc"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_s1_auraelec"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_s1_auraelecc"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_s1_aurafire"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_s1_aurafirec"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_s1_auraunata"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_s1_pulscold"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_s1_pulselec"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_s1_pulsfire"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_s1_pulsneg"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "nw_s1_pulspois"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "on_item_equip"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "ondeath012"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "onrespawn010"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "pccorpseaction15"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "pcs_only"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "playerunequip"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "raitheenspawn"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "randomlightning"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "randomwalk"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "rantrandomwalk1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "regegshswrdelen1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "regenghoststatue"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "restingnew"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "returntomaster1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "returntomaster2"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "revealarea1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "revedelljump"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "rwnw_c2_default1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "s_cleartrash"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "s_dying"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "s_itemacquired"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "s_moduserdef"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "saurrodtel1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "seekanddestroy1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "seekanddestroy2"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "sei_sit"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "sharkey_ring"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "sit"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "snoworcmace"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "snoworcsword"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "spawnghosts"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "spawnghostsevil"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "spawnhstlangel1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "staticspawn"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "staticspawnslow"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "stripinvsnsanct1"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "thrtele"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "trashbin001"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "trigspellinwell"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "userdefrid"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "welloferutel"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "whisperconvo"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "wrthdoomclaw"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "x2_s2_hellball"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "x2_s2_ruin"
+        }
+      },
+      {
+        "__struct_id": 9,
+        "ResRef": {
+          "type": "resref",
+          "value": "x2_s3_onhitcast"
+        }
+      }
+    ]
+  },
+  "Mod_Creator_ID": {
+    "type": "int",
+    "value": 2
+  },
+  "Mod_CustomTlk": {
+    "type": "cexostring",
+    "value": "cep21_v1"
+  },
+  "Mod_CutSceneList": {
+    "type": "list",
+    "value": []
+  },
+  "Mod_DawnHour": {
+    "type": "byte",
+    "value": 6
+  },
+  "Mod_Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "You MUST install CEP 1.51!\nhttp://nwvault.ign.com/cep/downloads/ \nForums: http://www.howardslotr.com/   \nHotU, SoU, patch 1.66 required!\n"
+    }
+  },
+  "Mod_DuskHour": {
+    "type": "byte",
+    "value": 18
+  },
+  "Mod_Entry_Area": {
+    "type": "resref",
+    "value": "thewelloferu"
+  },
+  "Mod_Entry_Dir_X": {
+    "type": "float",
+    "value": 0.0
+  },
+  "Mod_Entry_Dir_Y": {
+    "type": "float",
+    "value": 1.0
+  },
+  "Mod_Entry_X": {
+    "type": "float",
+    "value": 19.0
+  },
+  "Mod_Entry_Y": {
+    "type": "float",
+    "value": 5.0
+  },
+  "Mod_Entry_Z": {
+    "type": "float",
+    "value": 0.0
+  },
+  "Mod_Expan_List": {
+    "type": "list",
+    "value": []
+  },
+  "Mod_GVar_List": {
+    "type": "list",
+    "value": []
+  },
+  "Mod_HakList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "cep2_top_v21"
+        }
+      },
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "cep2_add_phenos5"
+        }
+      },
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "cep2_add_phenos4"
+        }
+      },
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "cep2_add_phenos3"
+        }
+      },
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "cep2_add_phenos2"
+        }
+      },
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "cep2_add_phenos1"
+        }
+      },
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "cep2_add_sb_v1"
+        }
+      },
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "cep2_core6"
+        }
+      },
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "cep2_core5"
+        }
+      },
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "cep2_core4"
+        }
+      },
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "cep2_core3"
+        }
+      },
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "cep2_core2"
+        }
+      },
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "cep2_core1"
+        }
+      },
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "cep2_core0"
+        }
+      }
+    ]
+  },
+  "Mod_IsSaveGame": {
+    "type": "byte",
+    "value": 0
+  },
+  "Mod_MinGameVer": {
+    "type": "cexostring",
+    "value": "1.69"
+  },
+  "Mod_MinPerHour": {
+    "type": "byte",
+    "value": 1
+  },
+  "Mod_Name": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Howards LOTR CEP 5.3A"
+    }
+  },
+  "Mod_OnAcquirItem": {
+    "type": "resref",
+    "value": "s_itemacquired"
+  },
+  "Mod_OnActvtItem": {
+    "type": "resref",
+    "value": "dmfxew_activate"
+  },
+  "Mod_OnClientEntr": {
+    "type": "resref",
+    "value": "me_on_enter"
+  },
+  "Mod_OnClientLeav": {
+    "type": "resref",
+    "value": "me_on_leave"
+  },
+  "Mod_OnCutsnAbort": {
+    "type": "resref",
+    "value": ""
+  },
+  "Mod_OnHeartbeat": {
+    "type": "resref",
+    "value": ""
+  },
+  "Mod_OnModLoad": {
+    "type": "resref",
+    "value": "s_modload"
+  },
+  "Mod_OnModStart": {
+    "type": "resref",
+    "value": ""
+  },
+  "Mod_OnPlrChat": {
+    "type": "resref",
+    "value": ""
+  },
+  "Mod_OnPlrDeath": {
+    "type": "resref",
+    "value": "ondeath012"
+  },
+  "Mod_OnPlrDying": {
+    "type": "resref",
+    "value": "s_dying"
+  },
+  "Mod_OnPlrEqItm": {
+    "type": "resref",
+    "value": "on_item_equip"
+  },
+  "Mod_OnPlrLvlUp": {
+    "type": "resref",
+    "value": ""
+  },
+  "Mod_OnPlrRest": {
+    "type": "resref",
+    "value": "restingnew"
+  },
+  "Mod_OnPlrUnEqItm": {
+    "type": "resref",
+    "value": "playerunequip"
+  },
+  "Mod_OnSpawnBtnDn": {
+    "type": "resref",
+    "value": "onrespawn010"
+  },
+  "Mod_OnUnAqreItem": {
+    "type": "resref",
+    "value": "destroy_deth"
+  },
+  "Mod_OnUsrDefined": {
+    "type": "resref",
+    "value": "s_moduserdef"
+  },
+  "Mod_StartDay": {
+    "type": "byte",
+    "value": 1
+  },
+  "Mod_StartHour": {
+    "type": "byte",
+    "value": 6
+  },
+  "Mod_StartMonth": {
+    "type": "byte",
+    "value": 1
+  },
+  "Mod_StartMovie": {
+    "type": "resref",
+    "value": ""
+  },
+  "Mod_StartYear": {
+    "type": "dword",
+    "value": 1372
+  },
+  "Mod_Tag": {
+    "type": "cexostring",
+    "value": "MODULE"
+  },
+  "Mod_Version": {
+    "type": "dword",
+    "value": 3
+  },
+  "Mod_XPScale": {
+    "type": "byte",
+    "value": 200
+  },
+  "VarTable": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "X2_SWITCH_ENABLE_UMD_SCROLLS"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 1
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "X2_S_UD_SPELLSCRIPT"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 3
+        },
+        "Value": {
+          "type": "cexostring",
+          "value": "st_onspellcast"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "CREATURE_VAR_USE_SPAWN_AMBIENT_IMMOBILE"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 1
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "CREATURE_VAR_USE_SPAWN_AMBIENT"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "MODULE_SWITCH_ENABLE_CROSSAREA_WALKWAYPOINTS"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 1
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1183 @@
+{
+  "__data_type": "ITP ",
+  "MAIN": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "ID": {
+          "type": "byte",
+          "value": 8
+        },
+        "LIST": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Abyssal Tendril Encounter"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "abyssaltendrilen"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Assorted Elfs"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "assortedelfs"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Beholders and Flayers"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "beholdersnflayer"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Carrokinner"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "carrokmixed001"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "CarrokMixed"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "carrokmixed"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Cave Stirge"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "cavestirge"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Cold Drakes, Baby Only"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "colddrakes1"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Drow Elfs"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "drowefls01"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Edoras Encounters"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "edorasencounters"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Fangore The Wolf"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "fangorethewolf1"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Fire Rats"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "firerats00000001"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Freezing Wisps Only"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "freezingwisps01"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Gondorian Archer"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "gondorianarcher"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Gondorian Guards"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "royalgondorguard"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "IceQueenGiants"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "icequeengiants"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "New Mordor Orcs"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "newmordororcs"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Sea Cliff Creatures"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "swampcreature001"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Stingers and Driders"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "carrokmixed002"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Stinging Bugs"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "stingingbugs"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Swamp Creatures"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "swampcreatures"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Undead, High Group"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "undeadhigh"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Vrocks N Slads"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "vrocksnslads01"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Wood Elf Guards"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "woodelfguards"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Zombie Pirates"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "zombiepirates"
+              }
+            }
+          ]
+        },
+        "STRREF": {
+          "type": "dword",
+          "value": 5546
+        }
+      },
+      {
+        "__struct_id": 0,
+        "ID": {
+          "type": "byte",
+          "value": 9
+        },
+        "LIST": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Angmar Protectors"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "angmarprotector1"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Bad Ass Undead Group"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "bassundeadgrp1"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Brood Mothers Random"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "broodmothers001"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Dol Guldur Elementals"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "dolguldurelement"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Dol Guldur Orcs"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "dolguldurorcs"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Dragon, GrandDaddy"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "dragonstrong102"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Dragon, POCD Group"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "dragonstrong103"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Dragon, Strong Group"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "dragonstrong101"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Drow, Random"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "drowrandomenctr1"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Greater Vampires"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "greatervampires1"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Green Faries"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "greenfaries1"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Heavy Orcs"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "orcsungolparty01"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Mixed Master Elementals"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "mixedmasterele1"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Mordor Orcs only"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "orcsungolpart001"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "moriabyss"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "moriabyss"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Nazgul Golum"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "nazgulgolum1"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Saurons Little People"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "littledartguys"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Sewer Hags"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "sewerhagsenc1"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Son of Shelob"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "sonofshelob1"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Spider, UnseenLurker"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "unseenlurkspdr00"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Ultra Spiders Random"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "ultraspiders001"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "UrikaiStandard"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "urikaistandard1"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Vamp N Rogue"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "greatervampir001"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "WaterElementals"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "willowispreso003"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "WereRats"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "wearrats01"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Will O Wisp, Resonant"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "willowispreso001"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Will O Wisp, Resonant"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "willowispreso002"
+              }
+            }
+          ]
+        },
+        "STRREF": {
+          "type": "dword",
+          "value": 5547
+        }
+      },
+      {
+        "__struct_id": 0,
+        "ID": {
+          "type": "byte",
+          "value": 6
+        },
+        "LIST": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Carn Dum Encounters"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "carndumencount1"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Isengard encounters"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "isengardenc1"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "minotaurs"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "minotaurs"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "TwigBliters"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "twigbliters"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Undead, Medium Group"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "undeadmed"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Vermin, Spider Group"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "verspider001"
+              }
+            }
+          ]
+        },
+        "STRREF": {
+          "type": "dword",
+          "value": 4817
+        }
+      },
+      {
+        "__struct_id": 0,
+        "ID": {
+          "type": "byte",
+          "value": 7
+        },
+        "LIST": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Goblinfemale"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "goblinmixeasy001"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "GoblinMixEasy"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "goblinmixeasy"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "GoblinMixHard"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "goblinmixeasy002"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "GoblinMixLotsofem"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "goblinmixeasy003"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Good Animated Tomes"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "animatedtomes"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "greymountgiants"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "mistymountgia001"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Hostile Animated Tomes"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "animatedtomes001"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Hostile Trolls Group"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "m2q2_trollhos"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Hostile Trolls Group"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "m2q2_trollhos001"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "kallrist"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "kallrist"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "mistymountgiants"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "mistymountgiants"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Spiderlings"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "spiderlings"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "RESREF": {
+                "type": "resref",
+                "value": "watercregrp001"
+              },
+              "STRREF": {
+                "type": "dword",
+                "value": 14521
+              }
+            }
+          ]
+        },
+        "STRREF": {
+          "type": "dword",
+          "value": 5545
+        }
+      },
+      {
+        "__struct_id": 0,
+        "LIST": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "ID": {
+                "type": "byte",
+                "value": 0
+              },
+              "LIST": {
+                "type": "list",
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Bats"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "bats"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "FireBeetles"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "firebeetles"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "FireBeetles"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "firebeetles001"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "GiantSpider"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "giantspider"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "GiantSpider"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "giantspider001"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Gnolls"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "gnolls"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "hardspiders"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "hardspiders"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "HelmsDeep"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "helmsdeepenc1"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Minor Wisps"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "minorwisps"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Orc Fire Archers"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "orcfirearchers"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Rats"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "rats"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Rats"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "rats001"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Ring Seeker"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "ringseeker"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Spectre"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "spectre"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "statuewronganswer"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "statuewronganswe"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Stirges"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "stirges"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "WereRats"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "wererats"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Worgs"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "worgs"
+                    }
+                  }
+                ]
+              },
+              "STRREF": {
+                "type": "dword",
+                "value": 6688
+              }
+            },
+            {
+              "__struct_id": 0,
+              "ID": {
+                "type": "byte",
+                "value": 1
+              },
+              "STRREF": {
+                "type": "dword",
+                "value": 6689
+              }
+            },
+            {
+              "__struct_id": 0,
+              "ID": {
+                "type": "byte",
+                "value": 2
+              },
+              "STRREF": {
+                "type": "dword",
+                "value": 6690
+              }
+            },
+            {
+              "__struct_id": 0,
+              "ID": {
+                "type": "byte",
+                "value": 3
+              },
+              "STRREF": {
+                "type": "dword",
+                "value": 6691
+              }
+            },
+            {
+              "__struct_id": 0,
+              "ID": {
+                "type": "byte",
+                "value": 4
+              },
+              "STRREF": {
+                "type": "dword",
+                "value": 6692
+              }
+            }
+          ]
+        },
+        "STRREF": {
+          "type": "dword",
+          "value": 6687
+        }
+      },
+      {
+        "__struct_id": 0,
+        "ID": {
+          "type": "byte",
+          "value": 5
+        },
+        "LIST": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Flying Bugs"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "flyingbugs1"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "graverobbers"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "graverobbers"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "Misc Dogs"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "anilowhunter001"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "More Barrow Creatures"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "anilowhunter002"
+              }
+            },
+            {
+              "__struct_id": 0,
+              "NAME": {
+                "type": "cexostring",
+                "value": "MT Eyeball"
+              },
+              "RESREF": {
+                "type": "resref",
+                "value": "mteyeball1"
+              }
+            }
+          ]
+        },
+        "STRREF": {
+          "type": "dword",
+          "value": 5543
+        }
+      }
+    ]
+  }
+}

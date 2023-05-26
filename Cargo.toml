@@ -1,0 +1,24 @@
+[package]
+name = "nwn_nasher_types"
+version = "0.1.0"
+license = "MIT"
+description = "A library to parse and de/serialize the files from the nwn community tool, nasher"
+readme = "README.md"
+homepage = "https://github.com/urothis/rs_nwn_nasher_types"
+repository = "https://github.com/urothis/rs_nwn_nasher_types"
+keywords = ["library", "nwn", "neverwinter nights", "nwnee", "json", "nasher"]
+categories = ["game-development"]
+edition = "2021"
+authors = ["Urothis#4019"]
+exclude = [
+  "assets"
+]
+
+[dependencies]
+rust_decimal = { version = "1.29", features = ["serde-float"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[dev-dependencies]
+git2 = "0.17.1"
+termdiff = "3.1.2"
