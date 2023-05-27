@@ -5,6 +5,7 @@ use serde::{Deserialize, Serialize};
 
 use super::*;
 
+/// Represents a dialog in the `dlg` file format.
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Dlg {
     /// Optional field representing the delay for the entry in milliseconds
@@ -36,6 +37,7 @@ pub struct Dlg {
     pub starting_list: Option<NwValue<Vec<StartingList>>>,
 }
 
+/// Represents a entry in the `dlg` file format.
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Entry {
     /// Optional field representing the struct ID of the entry
@@ -76,34 +78,10 @@ pub struct Entry {
     pub speaker: Option<NwValue<String>>,
     /// Optional field representing the text of the entry
     #[serde(skip_serializing_if = "Option::is_none", rename = "Text")]
-    pub text: Option<NwValue<Text>>,
+    pub text: Option<NwValue<super::LocalizedText>>,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
-pub struct Text {
-    /// Optional field representing the English text
-    #[serde(skip_serializing_if = "Option::is_none", rename = "0")]
-    pub english: Option<String>,
-    /// Optional field representing the French text
-    #[serde(skip_serializing_if = "Option::is_none", rename = "1")]
-    pub french: Option<String>,
-    /// Optional field representing the German text
-    #[serde(skip_serializing_if = "Option::is_none", rename = "2")]
-    pub german: Option<String>,
-    /// Optional field representing the Italian text
-    #[serde(skip_serializing_if = "Option::is_none", rename = "3")]
-    pub italian: Option<String>,
-    /// Optional field representing the Spanish text
-    #[serde(skip_serializing_if = "Option::is_none", rename = "4")]
-    pub spanish: Option<String>,
-    /// Optional field representing the Polish text
-    #[serde(skip_serializing_if = "Option::is_none", rename = "5")]
-    pub polish: Option<String>,
-    /// Optional field representing the ID of the text
-    #[serde(skip_serializing_if = "Option::is_none", rename = "id")]
-    pub id: Option<u32>,
-}
-
+/// Represents a response.
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ReplyEntry {
     /// Optional field representing the struct ID
@@ -144,12 +122,13 @@ pub struct ReplyEntry {
     pub speaker: Option<NwValue<String>>,
     /// Optional field representing the text
     #[serde(skip_serializing_if = "Option::is_none", rename = "Text")]
-    pub text: Option<NwValue<Text>>,
+    pub text: Option<NwValue<super::LocalizedText>>,
     /// Optional field representing the link comment
     #[serde(skip_serializing_if = "Option::is_none", rename = "LinkComment")]
     pub link_comment: Option<NwValue<String>>,
 }
 
+/// An entry reply.
 #[derive(Debug, Serialize, Deserialize)]
 pub struct EntryReply {
     /// Field representing the struct ID
@@ -169,6 +148,7 @@ pub struct EntryReply {
     pub link_comment: Option<NwValue<String>>,
 }
 
+/// A response.
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Reply {
     /// Field representing the struct ID
@@ -188,6 +168,7 @@ pub struct Reply {
     pub link_comment: Option<NwValue<String>>,
 }
 
+/// The starting list in a conversation.
 #[derive(Debug, Serialize, Deserialize)]
 pub struct StartingList {
     /// Field representing the struct ID

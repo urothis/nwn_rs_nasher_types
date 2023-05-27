@@ -1,3 +1,6 @@
+#![deny(missing_docs)]
+#![deny(clippy::missing_docs_in_private_items)]
+
 //! # Neverwinter Nights decompiled module file reader and writer
 //!
 //! A library that provides serialization of Neverwinter Nights module json files generated via [Nasher](https://github.com/squattingmonk/nasher)
@@ -53,38 +56,55 @@ use serde::{Deserialize, Serialize};
 #[derive(Serialize, Deserialize)]
 #[serde(tag = "__data_type")]
 pub enum NwType {
+    /// Area
     #[serde(alias = "ARE ", rename = "ARE ")]
     Area(are::Area),
+    /// Dialog
     #[serde(alias = "DLG ", rename = "DLG ")]
     Dialog(dlg::Dlg),
+    /// Faction
     #[serde(alias = "FAC ", rename = "FAC ")]
     Faction(fac::Fac),
+    /// AreaComments
     #[serde(alias = "GIC ", rename = "GIC ")]
     AreaComments(gic::Gic),
+    /// AreaInfo
     #[serde(alias = "GIT ", rename = "GIT ")]
     AreaInfo(git::Git),
+    /// ModuleInfo
     #[serde(alias = "IFO ", rename = "IFO ")]
     ModuleInfo(ifo::Ifo),
+    /// Palette
     #[serde(alias = "ITP ", rename = "ITP ")]
     Palette(itp::Itp),
+    /// Journal
     #[serde(alias = "JRL ", rename = "JRL ")]
     Journal(jrl::Jrl),
+    /// Creature
     #[serde(alias = "UTC ", rename = "UTC ")]
     Creature(utc::Utc),
+    /// Door
     #[serde(alias = "UTD ", rename = "UTD ")]
     Door(utd::Utd),
+    /// Encounter
     #[serde(alias = "UTE ", rename = "UTE ")]
     Encounter(ute::Ute),
+    /// Item
     #[serde(alias = "UTI ", rename = "UTI ")]
     Item(uti::Uti),
+    /// Store
     #[serde(alias = "UTM ", rename = "UTM ")]
     Store(utm::Utm),
+    /// Placeable
     #[serde(alias = "UTP ", rename = "UTP ")]
     Placeable(utp::Utp),
+    /// Sound
     #[serde(alias = "UTS ", rename = "UTS ")]
     Sound(uts::Uts),
+    /// Trigger
     #[serde(alias = "UTT ", rename = "UTT ")]
     Trigger(utt::Utt),
+    /// Waypoint
     #[serde(alias = "UTW ", rename = "UTW ")]
     Waypoint(utw::Utw),
 }
@@ -136,7 +156,7 @@ pub struct NwValue<T> {
     #[serde(rename = "type")]
     pub _type: String,
 
-    // The actual value of type T
+    /// The actual value of type T
     #[serde(rename = "value")]
     pub value: T,
 }
@@ -162,24 +182,31 @@ pub struct NwStruct<T> {
 /// <https://nwnlexicon.com/index.php?title=PLAYER_LANGUAGE>
 #[derive(Debug, Serialize, Deserialize)]
 pub struct LocalizedText {
+    /// The English version of the string.
     #[serde(skip_serializing_if = "Option::is_none", rename = "0")]
     pub english: Option<String>,
 
+    /// The French version of the string.
     #[serde(skip_serializing_if = "Option::is_none", rename = "1")]
     pub french: Option<String>,
 
+    /// The German version of the string.
     #[serde(skip_serializing_if = "Option::is_none", rename = "2")]
     pub german: Option<String>,
 
+    /// The Italian version of the string.
     #[serde(skip_serializing_if = "Option::is_none", rename = "3")]
     pub italian: Option<String>,
 
+    /// The Spanish version of the string.
     #[serde(skip_serializing_if = "Option::is_none", rename = "4")]
     pub spanish: Option<String>,
 
+    /// The Polish version of the string.
     #[serde(skip_serializing_if = "Option::is_none", rename = "5")]
     pub polish: Option<String>,
 
+    /// The id of the string.
     #[serde(skip_serializing_if = "Option::is_none", rename = "id")]
     pub id: Option<u32>,
 }

@@ -36,6 +36,7 @@ pub struct Gic {
     pub waypoint_list: Option<NwValue<Vec<Comment>>>,
 }
 
+/// Represents a comment
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Comment {
     /// Optional field representing the struct ID

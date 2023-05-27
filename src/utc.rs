@@ -6,281 +6,283 @@ use serde::{Deserialize, Serialize};
 
 use super::*;
 
+/// Represents the UTC (Creature) structure.
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Utc {
-    // The appearance type of the creature.
+    /// The appearance type of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Appearance_Type")]
     pub appearance_type: Option<NwValue<i32>>,
 
-    // Indicates whether the creature has a body bag.
+    /// Indicates whether the creature has a body bag.
     #[serde(skip_serializing_if = "Option::is_none", rename = "BodyBag")]
     pub body_bag: Option<NwValue<u8>>,
 
-    // The charisma attribute of the creature.
+    /// The charisma attribute of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Cha")]
     pub charisma: Option<NwValue<i32>>,
 
-    // The challenge rating of the creature.
+    /// The challenge rating of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ChallengeRating")]
     pub challenge_rating: Option<NwValue<Decimal>>,
 
-    // The list of classes associated with the creature.
+    /// The list of classes associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ClassList")]
     pub class_list: Option<NwValue<Vec<Class>>>,
 
-    // Comments or additional information about the creature.
+    /// Comments or additional information about the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Comment")]
     pub comment: Option<NwValue<String>>,
 
-    // The constitution attribute of the creature.
+    /// The constitution attribute of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Con")]
     pub constitution: Option<NwValue<i32>>,
 
-    // The conversation associated with the creature.
+    /// The conversation associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Conversation")]
     pub conversation: Option<NwValue<String>>,
 
-    // The challenge rating adjustment for the creature.
+    /// The challenge rating adjustment for the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "CRAdjust")]
     pub cr_adjust: Option<NwValue<i32>>,
 
-    // The current hit points of the creature.
+    /// The current hit points of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "CurrentHitPoints")]
     pub current_hit_points: Option<NwValue<i32>>,
 
-    // The decay time for the creature.
+    /// The decay time for the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "DecayTime")]
     pub decay_time: Option<NwValue<i32>>,
 
-    // The deity associated with the creature.
+    /// The deity associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Deity")]
     pub deity: Option<NwValue<String>>,
 
-    // The description of the creature.
+    /// The description of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Description")]
     pub description: Option<NwValue<LocalizedText>>,
 
-    // The dexterity attribute of the creature.
+    /// The dexterity attribute of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Dex")]
     pub dexterity: Option<NwValue<i32>>,
 
-    // Indicates whether the creature is disarmable.
+    /// Indicates whether the creature is disarmable.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Disarmable")]
     pub disarmable: Option<NwValue<u8>>,
 
-    // The list of equipped items associated with the creature.
+    /// The list of equipped items associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Equip_ItemList")]
     pub equip_item_list: Option<NwValue<Vec<EquippedItem>>>,
 
-    // The faction ID associated with the creature.
+    /// The faction ID associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "FactionID")]
     pub faction_id: Option<NwValue<i32>>,
 
-    // The list of feats associated with the creature.
+    /// The list of feats associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "FeatList")]
     pub feat_list: Option<NwValue<Vec<Feat>>>,
 
-    // The first name of the creature.
+    /// The first name of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "FirstName")]
     pub first_name: Option<NwValue<LocalizedText>>,
 
-    // The fortitude bonus of the creature.
+    /// The fortitude bonus of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "fortbonus")]
     pub fortitude_bonus: Option<NwValue<i32>>,
 
-    // The gender of the creature.
+    /// The gender of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Gender")]
     pub gender: Option<NwValue<u8>>,
 
-    // The alignment (good/evil) of the creature.
+    /// The alignment (good/evil) of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "GoodEvil")]
     pub good_evil: Option<NwValue<u8>>,
 
-    // The total hit points of the creature.
+    /// The total hit points of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "HitPoints")]
     pub hit_points: Option<NwValue<i32>>,
 
-    // The intelligence attribute of the creature.
+    /// The intelligence attribute of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Int")]
     pub intelligence: Option<NwValue<i32>>,
 
-    // Indicates whether the creature is interruptable.
+    /// Indicates whether the creature is interruptable.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Interruptable")]
     pub interruptable: Option<NwValue<u8>>,
 
-    // Indicates whether the creature is immortal.
+    /// Indicates whether the creature is immortal.
     #[serde(skip_serializing_if = "Option::is_none", rename = "IsImmortal")]
     pub is_immortal: Option<NwValue<u8>>,
 
-    // Indicates whether the creature is a player character (PC).
+    /// Indicates whether the creature is a player character (PC).
     #[serde(skip_serializing_if = "Option::is_none", rename = "IsPC")]
     pub is_pc: Option<NwValue<u8>>,
 
-    // The list of items associated with the creature.
+    /// The list of items associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ItemList")]
     pub item_list: Option<NwValue<Vec<Item>>>,
 
-    // The last name of the creature.
+    /// The last name of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "LastName")]
     pub last_name: Option<NwValue<LocalizedText>>,
 
-    // The lawful/chaotic alignment of the creature.
+    /// The lawful/chaotic alignment of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "LawfulChaotic")]
     pub lawful_chaotic: Option<NwValue<i32>>,
 
-    // Indicates whether the creature is lootable.
+    /// Indicates whether the creature is lootable.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Lootable")]
     pub lootable: Option<NwValue<u8>>,
 
-    // The maximum hit points of the creature.
+    /// The maximum hit points of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "MaxHitPoints")]
     pub max_hit_points: Option<NwValue<i32>>,
 
-    // The natural armor class of the creature.
+    /// The natural armor class of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "NaturalAC")]
     pub natural_ac: Option<NwValue<i32>>,
 
-    // Indicates whether the creature is not subject to permanent death.
+    /// Indicates whether the creature is not subject to permanent death.
     #[serde(skip_serializing_if = "Option::is_none", rename = "NoPermDeath")]
     pub no_perm_death: Option<NwValue<u8>>,
 
-    // The palette ID associated with the creature.
+    /// The palette ID associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "PaletteID")]
     pub palette_id: Option<NwValue<i32>>,
 
-    // The perception range of the creature.
+    /// The perception range of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "PerceptionRange")]
     pub perception_range: Option<NwValue<i32>>,
 
-    // The phenotype ID associated with the creature.
+    /// The phenotype ID associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Phenotype")]
     pub phenotype: Option<NwValue<i32>>,
 
-    // Indicates whether the creature is part of the plot.
+    /// Indicates whether the creature is part of the plot.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Plot")]
     pub plot: Option<NwValue<u8>>,
 
-    // The portrait ID associated with the creature.
+    /// The portrait ID associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "PortraitId")]
     pub portrait_id: Option<NwValue<i32>>,
 
-    // The race ID associated with the creature.
+    /// The race ID associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Race")]
     pub race: Option<NwValue<i32>>,
 
-    // The reflex bonus of the creature.
+    /// The reflex bonus of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "refbonus")]
     pub reflex_bonus: Option<NwValue<i32>>,
 
-    // The script to be executed when the creature is attacked.
+    /// The script to be executed when the creature is attacked.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ScriptAttacked")]
     pub script_attacked: Option<NwValue<String>>,
 
-    // The script to be executed when the creature is damaged.
+    /// The script to be executed when the creature is damaged.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ScriptDamaged")]
     pub script_damaged: Option<NwValue<String>>,
 
-    // The script to be executed when the creature dies.
+    /// The script to be executed when the creature dies.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ScriptDeath")]
     pub script_death: Option<NwValue<String>>,
 
-    // The script to be executed during dialogues with the creature.
+    /// The script to be executed during dialogues with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ScriptDialogue")]
     pub script_dialogue: Option<NwValue<String>>,
 
-    // The script to be executed when the creature is disturbed.
+    /// The script to be executed when the creature is disturbed.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ScriptDisturbed")]
     pub script_disturbed: Option<NwValue<String>>,
 
-    // The script to be executed at the end of each round for the creature.
+    /// The script to be executed at the end of each round for the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ScriptEndRound")]
     pub script_end_round: Option<NwValue<String>>,
 
-    // The script to be executed during the creature's heartbeat event.
+    /// The script to be executed during the creature's heartbeat event.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ScriptHeartbeat")]
     pub script_heartbeat: Option<NwValue<String>>,
 
-    // The script to be executed when the creature is blocked.
+    /// The script to be executed when the creature is blocked.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ScriptOnBlocked")]
     pub script_on_blocked: Option<NwValue<String>>,
 
-    // The script to be executed when the creature notices something.
+    /// The script to be executed when the creature notices something.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ScriptOnNotice")]
     pub script_on_notice: Option<NwValue<String>>,
 
-    // The script to be executed when the creature rests.
+    /// The script to be executed when the creature rests.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ScriptRested")]
     pub script_rested: Option<NwValue<String>>,
 
-    // The script to be executed when the creature spawns.
+    /// The script to be executed when the creature spawns.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ScriptSpawn")]
     pub script_spawn: Option<NwValue<String>>,
 
-    // The script to be executed when a spell is cast at the creature.
+    /// The script to be executed when a spell is cast at the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ScriptSpellAt")]
     pub script_spell_at: Option<NwValue<String>>,
 
-    // The user-defined script associated with the creature.
+    /// The user-defined script associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ScriptUserDefine")]
     pub script_user_define: Option<NwValue<String>>,
 
-    // The list of skills associated with the creature.
+    /// The list of skills associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "SkillList")]
     pub skill_list: Option<NwValue<Vec<Skill>>>,
 
-    // The sound set file associated with the creature.
+    /// The sound set file associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "SoundSetFile")]
     pub sound_set_file: Option<NwValue<i32>>,
 
-    // The list of special abilities associated with the creature.
+    /// The list of special abilities associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "SpecAbilityList")]
     pub special_ability_list: Option<NwValue<Vec<SpecialAbility>>>,
 
-    // The ID of the starting package associated with the creature.
+    /// The ID of the starting package associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "StartingPackage")]
     pub starting_package: Option<NwValue<i32>>,
 
-    // The strength attribute value of the creature.
+    /// The strength attribute value of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Str")]
     pub strength: Option<NwValue<i32>>,
 
-    // The subrace associated with the creature.
+    /// The subrace associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Subrace")]
     pub subrace: Option<NwValue<String>>,
 
-    // The tag associated with the creature.
+    /// The tag associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Tag")]
     pub tag: Option<NwValue<String>>,
 
-    // The new tail ID associated with the creature.
+    /// The new tail ID associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Tail_New")]
     pub tail_new: Option<NwValue<i32>>,
 
-    // The list of templates associated with the creature.
+    /// The list of templates associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "TemplateList")]
     pub template_list: Option<NwValue<Vec<Template>>>,
 
-    // The template resource reference associated with the creature.
+    /// The template resource reference associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "TemplateResRef")]
     pub template_res_ref: Option<NwValue<String>>,
 
-    // The walking rate of the creature.
+    /// The walking rate of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "WalkRate")]
     pub walk_rate: Option<NwValue<i32>>,
 
-    // The willpower bonus of the creature.
+    /// The willpower bonus of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "willbonus")]
     pub will_bonus: Option<NwValue<i32>>,
 
-    // The new wings ID associated with the creature.
+    /// The new wings ID associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Wings_New")]
     pub wings_new: Option<NwValue<i32>>,
 
-    // The wisdom attribute value of the creature.
+    /// The wisdom attribute value of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Wis")]
     pub wisdom: Option<NwValue<i32>>,
 }
 
+/// A creature Class
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Class {
     /// Identifier for the struct
@@ -336,6 +338,7 @@ pub struct Class {
     pub memorized_list9: Option<NwValue<Vec<MemorizedSpell>>>,
 }
 
+/// A Creature memorized spell.
 #[derive(Debug, Serialize, Deserialize)]
 pub struct MemorizedSpell {
     /// Identifier for the struct
@@ -355,6 +358,7 @@ pub struct MemorizedSpell {
     pub meta_magic: Option<NwValue<i32>>,
 }
 
+/// A creature item.
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Item {
     /// Identifier for the struct
@@ -374,6 +378,7 @@ pub struct Item {
     pub repos_pos_y: Option<NwValue<i32>>,
 }
 
+/// A creature equippable item.
 #[derive(Debug, Serialize, Deserialize)]
 pub struct EquippedItem {
     /// Identifier for the struct
@@ -385,6 +390,7 @@ pub struct EquippedItem {
     pub res_ref: Option<NwValue<String>>,
 }
 
+/// A creature feat.
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Feat {
     /// Identifier for the struct
@@ -396,6 +402,7 @@ pub struct Feat {
     pub feat: Option<NwValue<u32>>,
 }
 
+/// A creature skill.
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Skill {
     /// Identifier for the struct
@@ -407,6 +414,7 @@ pub struct Skill {
     pub rank: Option<NwValue<u32>>,
 }
 
+/// A creature special ability.
 #[derive(Debug, Serialize, Deserialize)]
 pub struct SpecialAbility {
     /// Identifier for the struct
