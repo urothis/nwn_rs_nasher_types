@@ -209,7 +209,7 @@ pub struct Utp {
     pub _type: Option<NwValue<u8>>,
 
     /// Whether the placeable is usable
-    #[serde(skip_serializing_if = "Option::is_none", rename = "Usable")]
+    #[serde(skip_serializing_if = "Option::is_none", rename = "Useable")]
     pub usable: Option<NwValue<u8>>,
 
     /// Will save difficulty class for the placeable

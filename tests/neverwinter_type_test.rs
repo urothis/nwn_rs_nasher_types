@@ -268,6 +268,7 @@ pub fn round_trip(path: String) {
                         // ignore the -0.0 to 0.0 differences
                         for (line, l1, l2) in diff {
                             let tmp_json = format!("{{{}}}", &l1.trim());
+                            eprintln!("tmp_json: {}", tmp_json);
                             let value: Result<Value, _> = match serde_json::from_str(&tmp_json) {
                                 Ok(v) => Ok(v),
                                 Err(e) => Err(e),
