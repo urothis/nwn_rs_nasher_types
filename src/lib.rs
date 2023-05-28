@@ -17,7 +17,7 @@
 //! use nwn_nasher_types::*;
 //!
 //! fn main() {
-//!  let path = "src/module.ifo";
+//!  let path = "assets/testing/test.ifo.json";
 //!  let nw = NwType::from_file_path(path).expect("Failed to open file");
 //!  match nw {
 //!    NwType::ModuleInfo(value) => {
