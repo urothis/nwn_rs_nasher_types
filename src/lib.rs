@@ -17,19 +17,17 @@
 //! use nwn_nasher_types::*;
 //!
 //! fn main() {
-//!   let path = "src/module.ifo";
-//!
-//!   let nw = NwType::from_file_path(path).expect("Failed to open file");
-//!   match nw {
-//!     Ok(value) => {
-//!       println!("Value: {:?}", value);
-//!     }
-//!     Err(e) => {
-//!       panic!("Failed to deserialize {:?}: {}", path, e);
-//!     }
-//!   }
-//! }
+//!  let path = "src/module.ifo";
+//!  let nw = NwType::from_file_path(path).expect("Failed to open file");
+//!  match nw {
+//!    NwType::ModuleInfo(value) => {
+//!      println!("Value: {:?}", value);
+//!    }
+//!    _ => {}
+//!  }
+//!}
 //! ```
+
 pub mod are;
 pub mod dlg;
 pub mod fac;
@@ -51,7 +49,7 @@ pub mod utw;
 use serde::{Deserialize, Serialize};
 
 /// Neverwinter Nights file types
-#[derive(Serialize, Deserialize)]
+#[derive(Debug, Serialize, Deserialize)]
 #[serde(tag = "__data_type")]
 pub enum NwType {
     /// Area
