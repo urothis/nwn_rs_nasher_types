@@ -28,7 +28,6 @@
 //!       panic!("Failed to deserialize {:?}: {}", path, e);
 //!     }
 //!   }
-//! }
 //! ```
 pub mod are;
 pub mod dlg;
