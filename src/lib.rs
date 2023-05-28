@@ -15,13 +15,11 @@
 //! ## Example
 //! ```rust
 //! use nwn_nasher_types::*;
-//! use serde_json::*;
-//! use std::fs;
 //!
 //! fn main() {
 //!   let path = "src/module.ifo";
 //!
-//!   let file = NwType::from_file_path(path).expect("Failed to open file");
+//!   let nw = NwType::from_file_path(path).expect("Failed to open file");
 //!   match nw {
 //!     Ok(value) => {
 //!       println!("Value: {:?}", value);
