@@ -24,7 +24,7 @@ use nwn_nasher_types::*;
 
 fn main() {
   let path = "src/module.ifo";
-  let file = NwType::from_file_path(path).expect("Failed to open file");
+  let mw = NwType::from_file_path(path).expect("Failed to open file");
   match nw {
     Ok(value) => {
       println!("Value: {:?}", value);
