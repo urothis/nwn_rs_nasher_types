@@ -14,7 +14,7 @@ pub struct Utw {
 
     /// Appearance of the waypoint.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Appearance")]
-    pub appearance: Option<NwValue<i32>>,
+    pub appearance: Option<NwValue<u8>>,
 
     /// Comment associated with the waypoint.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Comment")]
@@ -46,7 +46,7 @@ pub struct Utw {
 
     /// Palette ID associated with the waypoint.
     #[serde(skip_serializing_if = "Option::is_none", rename = "PaletteID")]
-    pub palette_id: Option<NwValue<i32>>,
+    pub palette_id: Option<NwValue<u8>>,
 
     /// Tag associated with the waypoint.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Tag")]
