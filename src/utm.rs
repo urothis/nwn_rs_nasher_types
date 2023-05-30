@@ -82,9 +82,9 @@ pub struct Item {
 
     /// Represents the Repos_PosX field in the Item struct.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Repos_PosX")]
-    pub repos_pos_x: Option<NwValue<u32>>,
+    pub repos_pos_x: Option<NwValue<u16>>,
 
     /// Represents the Repos_Posy field in the Item struct.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Repos_Posy")]
-    pub repos_posy: Option<NwValue<u32>>,
+    pub repos_posy: Option<NwValue<u16>>,
 }
