@@ -59,37 +59,37 @@ pub struct AreaProperty {
 
   /// Daytime ambient sound (serialized as "AmbientSndDay")
   #[serde(skip_serializing_if = "Option::is_none", rename = "AmbientSndDay")]
-  pub ambient_snd_day: Option<NwValue<u32>>,
+  pub ambient_snd_day: Option<NwValue<i32>>,
 
   /// Volume for daytime ambient sound (serialized as "AmbientSndDayVol")
   #[serde(
     skip_serializing_if = "Option::is_none",
     rename = "AmbientSndDayVol"
   )]
-  pub ambient_snd_day_vol: Option<NwValue<u32>>,
+  pub ambient_snd_day_vol: Option<NwValue<i32>>,
 
   /// Nighttime ambient sound (serialized as "AmbientSndNight")
   #[serde(skip_serializing_if = "Option::is_none", rename = "AmbientSndNight")]
-  pub ambient_snd_night: Option<NwValue<u32>>,
+  pub ambient_snd_night: Option<NwValue<i32>>,
 
   /// Volume for nighttime ambient sound (serialized as "AmbientSndNitVol")
   #[serde(
     skip_serializing_if = "Option::is_none",
     rename = "AmbientSndNitVol"
   )]
-  pub ambient_snd_nit_vol: Option<NwValue<u32>>,
+  pub ambient_snd_nit_vol: Option<NwValue<i32>>,
 
   /// Environmental audio (serialized as "EnvAudio")
   #[serde(skip_serializing_if = "Option::is_none", rename = "EnvAudio")]
-  pub env_audio: Option<NwValue<u32>>,
+  pub env_audio: Option<NwValue<i32>>,
 
   /// Battle music (serialized as "MusicBattle")
   #[serde(skip_serializing_if = "Option::is_none", rename = "MusicBattle")]
-  pub music_battle: Option<NwValue<u32>>,
+  pub music_battle: Option<NwValue<i32>>,
 
   /// Daytime music (serialized as "MusicDay")
   #[serde(skip_serializing_if = "Option::is_none", rename = "MusicDay")]
-  pub music_day: Option<NwValue<u32>>,
+  pub music_day: Option<NwValue<i32>>,
 
   /// Music delay (serialized as "MusicDelay")
   #[serde(skip_serializing_if = "Option::is_none", rename = "MusicDelay")]
@@ -97,7 +97,7 @@ pub struct AreaProperty {
 
   /// Nighttime music (serialized as "MusicNight")
   #[serde(skip_serializing_if = "Option::is_none", rename = "MusicNight")]
-  pub music_night: Option<NwValue<u32>>,
+  pub music_night: Option<NwValue<i32>>,
 }
 
 /// TODO
@@ -142,7 +142,7 @@ pub struct Door {
 
   /// The current HP (hit points) of the door
   #[serde(skip_serializing_if = "Option::is_none", rename = "CurrentHP")]
-  pub current_hp: Option<NwValue<u16>>,
+  pub current_hp: Option<NwValue<i16>>,
 
   /// The description of the door
   #[serde(skip_serializing_if = "Option::is_none", rename = "Description")]
@@ -162,7 +162,7 @@ pub struct Door {
 
   /// The generic type (new) of the door
   #[serde(skip_serializing_if = "Option::is_none", rename = "GenericType_New")]
-  pub generic_type_new: Option<NwValue<u8>>,
+  pub generic_type_new: Option<NwValue<u32>>,
 
   /// The hardness of the door
   #[serde(skip_serializing_if = "Option::is_none", rename = "Hardness")]
@@ -170,7 +170,7 @@ pub struct Door {
 
   /// The HP (hit points) of the door
   #[serde(skip_serializing_if = "Option::is_none", rename = "HP")]
-  pub hp: Option<NwValue<u16>>,
+  pub hp: Option<NwValue<i16>>,
 
   /// Represents whether the door can be interrupted
   #[serde(skip_serializing_if = "Option::is_none", rename = "Interruptable")]
@@ -278,7 +278,7 @@ pub struct Door {
 
   /// Represents the reference ID of the object
   #[serde(skip_serializing_if = "Option::is_none", rename = "Ref")]
-  pub ref_: Option<NwValue<u32>>,
+  pub ref_: Option<NwValue<u8>>,
 
   /// Represents the tag of the object
   #[serde(skip_serializing_if = "Option::is_none", rename = "Tag")]
@@ -350,11 +350,11 @@ pub struct Encounter {
 
   /// Represents the difficulty level of the object
   #[serde(skip_serializing_if = "Option::is_none", rename = "Difficulty")]
-  pub difficulty: Option<NwValue<u8>>,
+  pub difficulty: Option<NwValue<i32>>,
 
   /// Represents the difficulty index of the object
   #[serde(skip_serializing_if = "Option::is_none", rename = "DifficultyIndex")]
-  pub difficulty_index: Option<NwValue<u8>>,
+  pub difficulty_index: Option<NwValue<i32>>,
 
   /// Represents the faction ID associated with the object
   #[serde(skip_serializing_if = "Option::is_none", rename = "Faction")]
@@ -370,7 +370,7 @@ pub struct Encounter {
 
   /// Represents the maximum number of creatures associated with the object
   #[serde(skip_serializing_if = "Option::is_none", rename = "MaxCreatures")]
-  pub max_creatures: Option<NwValue<u8>>,
+  pub max_creatures: Option<NwValue<i32>>,
 
   /// Represents the script to execute when entering the object
   #[serde(skip_serializing_if = "Option::is_none", rename = "OnEntered")]
@@ -398,7 +398,7 @@ pub struct Encounter {
 
   /// Represents the recommended number of creatures for the object
   #[serde(skip_serializing_if = "Option::is_none", rename = "RecCreatures")]
-  pub rec_creatures: Option<NwValue<u8>>,
+  pub rec_creatures: Option<NwValue<i32>>,
 
   /// Represents whether the object is resettable
   #[serde(skip_serializing_if = "Option::is_none", rename = "Reset")]
@@ -406,15 +406,15 @@ pub struct Encounter {
 
   /// Represents the reset time of the object
   #[serde(skip_serializing_if = "Option::is_none", rename = "ResetTime")]
-  pub reset_time: Option<NwValue<u32>>,
+  pub reset_time: Option<NwValue<i32>>,
 
   /// Represents the number of times the object respawns
   #[serde(skip_serializing_if = "Option::is_none", rename = "Respawns")]
-  pub respawns: Option<NwValue<i8>>,
+  pub respawns: Option<NwValue<i32>>,
 
   /// Represents the spawn option for the object
   #[serde(skip_serializing_if = "Option::is_none", rename = "SpawnOption")]
-  pub spawn_option: Option<NwValue<u8>>,
+  pub spawn_option: Option<NwValue<i32>>,
 
   /// Represents the list of spawn points associated with the object
   #[serde(skip_serializing_if = "Option::is_none", rename = "SpawnPointList")]
@@ -531,7 +531,7 @@ pub struct Placeable {
 
   /// Represents the current HP of the object
   #[serde(skip_serializing_if = "Option::is_none", rename = "CurrentHP")]
-  pub current_hp: Option<NwValue<u16>>,
+  pub current_hp: Option<NwValue<i16>>,
 
   /// Represents the description of the object
   #[serde(skip_serializing_if = "Option::is_none", rename = "Description")]
@@ -559,7 +559,7 @@ pub struct Placeable {
 
   /// Represents the HP of the object
   #[serde(skip_serializing_if = "Option::is_none", rename = "HP")]
-  pub hp: Option<NwValue<u16>>,
+  pub hp: Option<NwValue<i16>>,
 
   /// Represents whether the object is interruptible
   #[serde(skip_serializing_if = "Option::is_none", rename = "Interruptable")]
@@ -659,7 +659,7 @@ pub struct Placeable {
 
   /// Represents the reflex saving throw of the object
   #[serde(skip_serializing_if = "Option::is_none", rename = "Ref")]
-  pub reflex: Option<NwValue<u32>>,
+  pub reflex: Option<NwValue<u8>>,
 
   /// Represents whether the object is static
   #[serde(skip_serializing_if = "Option::is_none", rename = "Static")]
@@ -707,7 +707,7 @@ pub struct Placeable {
 
   /// Represents the will saving throw of the object
   #[serde(skip_serializing_if = "Option::is_none", rename = "Will")]
-  pub will: Option<NwValue<u32>>,
+  pub will: Option<NwValue<u8>>,
 
   /// Represents the X position of the object
   #[serde(skip_serializing_if = "Option::is_none", rename = "X")]
@@ -932,7 +932,7 @@ pub struct Waypoint {
 
   /// Appearance field (serialized as "Appearance")
   #[serde(skip_serializing_if = "Option::is_none", rename = "Appearance")]
-  pub appearance: Option<NwValue<u32>>,
+  pub appearance: Option<NwValue<u8>>,
 
   /// Description field (serialized as "Description")
   #[serde(skip_serializing_if = "Option::is_none", rename = "Description")]
