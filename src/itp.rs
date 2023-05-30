@@ -31,7 +31,7 @@ pub struct Entry {
 
     /// The ID of the entry.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ID")]
-    pub id: Option<NwValue<u32>>,
+    pub id: Option<NwValue<u8>>,
 
     /// The list of sub-entries within the entry.
     #[serde(skip_serializing_if = "Option::is_none", rename = "LIST")]
