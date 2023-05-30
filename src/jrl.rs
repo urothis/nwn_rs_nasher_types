@@ -34,11 +34,11 @@ pub struct Category {
 
     /// The picture associated with the category.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Picture")]
-    pub picture: Option<NwValue<u64>>,
+    pub picture: Option<NwValue<u16>>,
 
     /// The priority of the category.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Priority")]
-    pub priority: Option<NwValue<u8>>,
+    pub priority: Option<NwValue<u32>>,
 
     /// The tag associated with the category.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Tag")]
@@ -58,7 +58,7 @@ pub struct Entry {
 
     /// The end position of the entry.
     #[serde(skip_serializing_if = "Option::is_none", rename = "End")]
-    pub end: Option<NwValue<u32>>,
+    pub end: Option<NwValue<u16>>,
 
     /// The ID of the entry.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ID")]
