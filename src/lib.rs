@@ -52,125 +52,127 @@ use serde::{Deserialize, Serialize};
 #[derive(Debug, Serialize, Deserialize)]
 #[serde(tag = "__data_type")]
 pub enum NwType {
-    /// Area
-    #[serde(alias = "ARE ", rename = "ARE ")]
-    Area(are::Area),
-    /// Dialog
-    #[serde(alias = "DLG ", rename = "DLG ")]
-    Dialog(dlg::Dlg),
-    /// Faction
-    #[serde(alias = "FAC ", rename = "FAC ")]
-    Faction(fac::Fac),
-    /// AreaComments
-    #[serde(alias = "GIC ", rename = "GIC ")]
-    AreaComments(gic::Gic),
-    /// AreaInfo
-    #[serde(alias = "GIT ", rename = "GIT ")]
-    AreaInfo(git::Git),
-    /// ModuleInfo
-    #[serde(alias = "IFO ", rename = "IFO ")]
-    ModuleInfo(ifo::Ifo),
-    /// Palette
-    #[serde(alias = "ITP ", rename = "ITP ")]
-    Palette(itp::Itp),
-    /// Journal
-    #[serde(alias = "JRL ", rename = "JRL ")]
-    Journal(jrl::Jrl),
-    /// Creature
-    #[serde(alias = "UTC ", rename = "UTC ")]
-    Creature(utc::Utc),
-    /// Door
-    #[serde(alias = "UTD ", rename = "UTD ")]
-    Door(utd::Utd),
-    /// Encounter
-    #[serde(alias = "UTE ", rename = "UTE ")]
-    Encounter(ute::Ute),
-    /// Item
-    #[serde(alias = "UTI ", rename = "UTI ")]
-    Item(uti::Uti),
-    /// Store
-    #[serde(alias = "UTM ", rename = "UTM ")]
-    Store(utm::Utm),
-    /// Placeable
-    #[serde(alias = "UTP ", rename = "UTP ")]
-    Placeable(utp::Utp),
-    /// Sound
-    #[serde(alias = "UTS ", rename = "UTS ")]
-    Sound(uts::Uts),
-    /// Trigger
-    #[serde(alias = "UTT ", rename = "UTT ")]
-    Trigger(utt::Utt),
-    /// Waypoint
-    #[serde(alias = "UTW ", rename = "UTW ")]
-    Waypoint(utw::Utw),
+  /// Area
+  #[serde(alias = "ARE ", rename = "ARE ")]
+  Area(are::Area),
+  /// Dialog
+  #[serde(alias = "DLG ", rename = "DLG ")]
+  Dialog(dlg::Dlg),
+  /// Faction
+  #[serde(alias = "FAC ", rename = "FAC ")]
+  Faction(fac::Fac),
+  /// AreaComments
+  #[serde(alias = "GIC ", rename = "GIC ")]
+  AreaComments(gic::Gic),
+  /// AreaInfo
+  #[serde(alias = "GIT ", rename = "GIT ")]
+  AreaInfo(git::Git),
+  /// ModuleInfo
+  #[serde(alias = "IFO ", rename = "IFO ")]
+  ModuleInfo(ifo::Ifo),
+  /// Palette
+  #[serde(alias = "ITP ", rename = "ITP ")]
+  Palette(itp::Itp),
+  /// Journal
+  #[serde(alias = "JRL ", rename = "JRL ")]
+  Journal(jrl::Jrl),
+  /// Creature
+  #[serde(alias = "UTC ", rename = "UTC ")]
+  Creature(utc::Utc),
+  /// Door
+  #[serde(alias = "UTD ", rename = "UTD ")]
+  Door(utd::Utd),
+  /// Encounter
+  #[serde(alias = "UTE ", rename = "UTE ")]
+  Encounter(ute::Ute),
+  /// Item
+  #[serde(alias = "UTI ", rename = "UTI ")]
+  Item(uti::Uti),
+  /// Store
+  #[serde(alias = "UTM ", rename = "UTM ")]
+  Store(utm::Utm),
+  /// Placeable
+  #[serde(alias = "UTP ", rename = "UTP ")]
+  Placeable(utp::Utp),
+  /// Sound
+  #[serde(alias = "UTS ", rename = "UTS ")]
+  Sound(uts::Uts),
+  /// Trigger
+  #[serde(alias = "UTT ", rename = "UTT ")]
+  Trigger(utt::Utt),
+  /// Waypoint
+  #[serde(alias = "UTW ", rename = "UTW ")]
+  Waypoint(utw::Utw),
 }
 
 impl NwType {
-    /// Returns a new NwType from a file path.
-    pub fn from_file_path(path: &str) -> Result<Self, serde_json::Error> {
-        let file = std::fs::File::open(&path).expect("Failed to open file");
-        serde_json::from_reader(file)
-    }
+  /// Returns a new NwType from a file path.
+  pub fn from_file_path(path: &str) -> Result<Self, serde_json::Error> {
+    let file = std::fs::File::open(&path).expect("Failed to open file");
+    serde_json::from_reader(file)
+  }
 
-    /// Returns a new NwType from a file reader.
-    pub fn from_reader<R: std::io::Read>(reader: R) -> Result<Self, serde_json::Error> {
-        serde_json::from_reader(reader)
-    }
+  /// Returns a new NwType from a file reader.
+  pub fn from_reader<R: std::io::Read>(
+    reader: R,
+  ) -> Result<Self, serde_json::Error> {
+    serde_json::from_reader(reader)
+  }
 
-    /// Returns a new NwType from a string.
-    pub fn from_str(s: &str) -> Result<Self, serde_json::Error> {
-        serde_json::from_str(s)
-    }
+  /// Returns a new NwType from a string.
+  pub fn from_str(s: &str) -> Result<Self, serde_json::Error> {
+    serde_json::from_str(s)
+  }
 
-    /// Returns a string representing the type of the `NwType` variant.
-    pub fn get_type(&self) -> String {
-        match self {
-            NwType::Area(_) => "ARE".to_string(),
-            NwType::Dialog(_) => "DLG".to_string(),
-            NwType::Faction(_) => "FAC".to_string(),
-            NwType::AreaComments(_) => "GIC".to_string(),
-            NwType::AreaInfo(_) => "GIT".to_string(),
-            NwType::ModuleInfo(_) => "IFO".to_string(),
-            NwType::Palette(_) => "ITP".to_string(),
-            NwType::Journal(_) => "JRL".to_string(),
-            NwType::Creature(_) => "UTC".to_string(),
-            NwType::Door(_) => "UTD".to_string(),
-            NwType::Encounter(_) => "UTE".to_string(),
-            NwType::Item(_) => "UTI".to_string(),
-            NwType::Store(_) => "UTM".to_string(),
-            NwType::Placeable(_) => "UTP".to_string(),
-            NwType::Sound(_) => "UTS".to_string(),
-            NwType::Trigger(_) => "UTT".to_string(),
-            NwType::Waypoint(_) => "UTW".to_string(),
-        }
+  /// Returns a string representing the type of the `NwType` variant.
+  pub fn get_type(&self) -> String {
+    match self {
+      NwType::Area(_) => "ARE".to_string(),
+      NwType::Dialog(_) => "DLG".to_string(),
+      NwType::Faction(_) => "FAC".to_string(),
+      NwType::AreaComments(_) => "GIC".to_string(),
+      NwType::AreaInfo(_) => "GIT".to_string(),
+      NwType::ModuleInfo(_) => "IFO".to_string(),
+      NwType::Palette(_) => "ITP".to_string(),
+      NwType::Journal(_) => "JRL".to_string(),
+      NwType::Creature(_) => "UTC".to_string(),
+      NwType::Door(_) => "UTD".to_string(),
+      NwType::Encounter(_) => "UTE".to_string(),
+      NwType::Item(_) => "UTI".to_string(),
+      NwType::Store(_) => "UTM".to_string(),
+      NwType::Placeable(_) => "UTP".to_string(),
+      NwType::Sound(_) => "UTS".to_string(),
+      NwType::Trigger(_) => "UTT".to_string(),
+      NwType::Waypoint(_) => "UTW".to_string(),
     }
+  }
 }
 /// Represents a named value in the Neverwinter Nights module file format.
 #[derive(Debug, Serialize, Deserialize)]
 pub struct NwValue<T> {
-    /// Represents the type of the value
-    #[serde(rename = "type")]
-    pub _type: String,
+  /// Represents the type of the value
+  #[serde(rename = "type")]
+  pub _type: String,
 
-    /// The actual value of type T
-    #[serde(rename = "value")]
-    pub value: T,
+  /// The actual value of type T
+  #[serde(rename = "value")]
+  pub value: T,
 }
 
 /// Represents a structured value in the Neverwinter Nights module file format.
 #[derive(Debug, Serialize, Deserialize)]
 pub struct NwStruct<T> {
-    /// Struct ID
-    #[serde(skip_serializing_if = "Option::is_none", rename = "__struct_id")]
-    pub struct_id: Option<u32>,
+  /// Struct ID
+  #[serde(skip_serializing_if = "Option::is_none", rename = "__struct_id")]
+  pub struct_id: Option<u32>,
 
-    /// Represents the type of the structured value
-    #[serde(rename = "type")]
-    pub _type: String,
+  /// Represents the type of the structured value
+  #[serde(rename = "type")]
+  pub _type: String,
 
-    /// The actual value of type T representing the structured value
-    #[serde(rename = "value")]
-    pub value: T,
+  /// The actual value of type T representing the structured value
+  #[serde(rename = "value")]
+  pub value: T,
 }
 
 /// A struct that represents a localized string.
@@ -178,31 +180,31 @@ pub struct NwStruct<T> {
 /// <https://nwnlexicon.com/index.php?title=PLAYER_LANGUAGE>
 #[derive(Debug, Serialize, Deserialize)]
 pub struct LocalizedText {
-    /// The English version of the string.
-    #[serde(skip_serializing_if = "Option::is_none", rename = "0")]
-    pub english: Option<String>,
+  /// The English version of the string.
+  #[serde(skip_serializing_if = "Option::is_none", rename = "0")]
+  pub english: Option<String>,
 
-    /// The French version of the string.
-    #[serde(skip_serializing_if = "Option::is_none", rename = "1")]
-    pub french: Option<String>,
+  /// The French version of the string.
+  #[serde(skip_serializing_if = "Option::is_none", rename = "1")]
+  pub french: Option<String>,
 
-    /// The German version of the string.
-    #[serde(skip_serializing_if = "Option::is_none", rename = "2")]
-    pub german: Option<String>,
+  /// The German version of the string.
+  #[serde(skip_serializing_if = "Option::is_none", rename = "2")]
+  pub german: Option<String>,
 
-    /// The Italian version of the string.
-    #[serde(skip_serializing_if = "Option::is_none", rename = "3")]
-    pub italian: Option<String>,
+  /// The Italian version of the string.
+  #[serde(skip_serializing_if = "Option::is_none", rename = "3")]
+  pub italian: Option<String>,
 
-    /// The Spanish version of the string.
-    #[serde(skip_serializing_if = "Option::is_none", rename = "4")]
-    pub spanish: Option<String>,
+  /// The Spanish version of the string.
+  #[serde(skip_serializing_if = "Option::is_none", rename = "4")]
+  pub spanish: Option<String>,
 
-    /// The Polish version of the string.
-    #[serde(skip_serializing_if = "Option::is_none", rename = "5")]
-    pub polish: Option<String>,
+  /// The Polish version of the string.
+  #[serde(skip_serializing_if = "Option::is_none", rename = "5")]
+  pub polish: Option<String>,
 
-    /// The id of the string.
-    #[serde(skip_serializing_if = "Option::is_none", rename = "id")]
-    pub id: Option<u32>,
+  /// The id of the string.
+  #[serde(skip_serializing_if = "Option::is_none", rename = "id")]
+  pub id: Option<u32>,
 }
