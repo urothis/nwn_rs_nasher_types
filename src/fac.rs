@@ -24,7 +24,7 @@ pub struct Faction {
     pub struct_id: Option<u32>,
     /// Field representing the faction global value.
     #[serde(skip_serializing_if = "Option::is_none", rename = "FactionGlobal")]
-    pub faction_global: Option<NwValue<u8>>,
+    pub faction_global: Option<NwValue<u16>>,
     /// Field representing the faction name.
     #[serde(skip_serializing_if = "Option::is_none", rename = "FactionName")]
     pub faction_name: Option<NwValue<String>>,
@@ -41,11 +41,11 @@ pub struct Rep {
     pub struct_id: Option<u32>,
     /// Field representing the first faction ID.
     #[serde(skip_serializing_if = "Option::is_none", rename = "FactionID1")]
-    pub faction_id1: Option<NwValue<u8>>,
+    pub faction_id1: Option<NwValue<u32>>,
     /// Field representing the second faction ID.
     #[serde(skip_serializing_if = "Option::is_none", rename = "FactionID2")]
-    pub faction_id2: Option<NwValue<u8>>,
+    pub faction_id2: Option<NwValue<u32>>,
     /// Field representing the faction reputation value.
     #[serde(skip_serializing_if = "Option::is_none", rename = "FactionRep")]
-    pub faction_rep: Option<NwValue<u8>>,
+    pub faction_rep: Option<NwValue<u32>>,
 }
