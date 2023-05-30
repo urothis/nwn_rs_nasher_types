@@ -38,7 +38,7 @@ pub struct Utp {
 
     /// Current hit points of the placeable
     #[serde(skip_serializing_if = "Option::is_none", rename = "CurrentHP")]
-    pub current_hp: Option<NwValue<u32>>,
+    pub current_hp: Option<NwValue<i16>>,
 
     /// Description of the placeable
     #[serde(skip_serializing_if = "Option::is_none", rename = "Description")]
@@ -66,7 +66,7 @@ pub struct Utp {
 
     /// Hit points of the placeable
     #[serde(skip_serializing_if = "Option::is_none", rename = "HP")]
-    pub hp: Option<NwValue<u32>>,
+    pub hp: Option<NwValue<i16>>,
 
     /// Whether the placeable is interruptable
     #[serde(skip_serializing_if = "Option::is_none", rename = "Interruptable")]
