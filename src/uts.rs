@@ -55,7 +55,7 @@ pub struct Uts {
 
     /// Palette ID of the sound.
     #[serde(skip_serializing_if = "Option::is_none", rename = "PaletteID")]
-    pub palette_id: Option<NwValue<i16>>,
+    pub palette_id: Option<NwValue<u8>>,
 
     /// Pitch variation of the sound.
     #[serde(skip_serializing_if = "Option::is_none", rename = "PitchVariation")]
@@ -103,11 +103,11 @@ pub struct Uts {
 
     /// Volume of the sound.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Volume")]
-    pub volume: Option<NwValue<u16>>,
+    pub volume: Option<NwValue<u8>>,
 
     /// Volume variation of the sound.
     #[serde(skip_serializing_if = "Option::is_none", rename = "VolumeVrtn")]
-    pub volume_vrtn: Option<NwValue<u32>>,
+    pub volume_vrtn: Option<NwValue<u8>>,
 }
 
 /// Represents a `Sound` structure.
