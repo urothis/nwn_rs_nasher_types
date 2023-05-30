@@ -1,0 +1,4 @@
+# https://github.com/rust-lang/rustfmt/blob/master/Configurations.md#max_width
+max_width = 80
+# https://github.com/rust-lang/rustfmt/blob/master/Configurations.md#tab_spaces
+tab_spaces = 2
