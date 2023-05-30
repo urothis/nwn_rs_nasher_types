@@ -23,15 +23,15 @@ pub struct Ute {
 
     /// The difficulty level of the Encounter.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Difficulty")]
-    pub difficulty: Option<NwValue<u8>>,
+    pub difficulty: Option<NwValue<i32>>,
 
     /// The difficulty index of the Encounter.
     #[serde(skip_serializing_if = "Option::is_none", rename = "DifficultyIndex")]
-    pub difficulty_index: Option<NwValue<u16>>,
+    pub difficulty_index: Option<NwValue<i32>>,
 
     /// The faction of the Encounter.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Faction")]
-    pub faction: Option<NwValue<u16>>,
+    pub faction: Option<NwValue<u32>>,
 
     /// The localized name of the Encounter.
     #[serde(skip_serializing_if = "Option::is_none", rename = "LocalizedName")]
@@ -39,7 +39,7 @@ pub struct Ute {
 
     /// The maximum number of creatures in the Encounter.
     #[serde(skip_serializing_if = "Option::is_none", rename = "MaxCreatures")]
-    pub max_creatures: Option<NwValue<u8>>,
+    pub max_creatures: Option<NwValue<i32>>,
 
     /// The script to run when a creature enters the Encounter.
     #[serde(skip_serializing_if = "Option::is_none", rename = "OnEntered")]
@@ -63,7 +63,7 @@ pub struct Ute {
 
     /// The palette ID of the Encounter.
     #[serde(skip_serializing_if = "Option::is_none", rename = "PaletteID")]
-    pub palette_id: Option<NwValue<i32>>,
+    pub palette_id: Option<NwValue<u8>>,
 
     /// Indicates if the Encounter is limited to players only.
     #[serde(skip_serializing_if = "Option::is_none", rename = "PlayerOnly")]
@@ -71,7 +71,7 @@ pub struct Ute {
 
     /// The recommended number of creatures in the Encounter.
     #[serde(skip_serializing_if = "Option::is_none", rename = "RecCreatures")]
-    pub rec_creatures: Option<NwValue<u8>>,
+    pub rec_creatures: Option<NwValue<i32>>,
 
     /// Indicates if the Encounter should be reset.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Reset")]
@@ -83,7 +83,7 @@ pub struct Ute {
 
     /// The number of times the Encounter respawns.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Respawns")]
-    pub respawns: Option<NwValue<i16>>,
+    pub respawns: Option<NwValue<i32>>,
 
     /// The spawn option of the Encounter.
     #[serde(skip_serializing_if = "Option::is_none", rename = "SpawnOption")]

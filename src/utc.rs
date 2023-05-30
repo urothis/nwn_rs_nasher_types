@@ -11,7 +11,7 @@ use super::*;
 pub struct Utc {
     /// The appearance type of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Appearance_Type")]
-    pub appearance_type: Option<NwValue<i32>>,
+    pub appearance_type: Option<NwValue<u16>>,
 
     /// Indicates whether the creature has a body bag.
     #[serde(skip_serializing_if = "Option::is_none", rename = "BodyBag")]
@@ -19,7 +19,7 @@ pub struct Utc {
 
     /// The charisma attribute of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Cha")]
-    pub charisma: Option<NwValue<i32>>,
+    pub charisma: Option<NwValue<u8>>,
 
     /// The challenge rating of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ChallengeRating")]
@@ -35,7 +35,7 @@ pub struct Utc {
 
     /// The constitution attribute of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Con")]
-    pub constitution: Option<NwValue<i32>>,
+    pub constitution: Option<NwValue<u8>>,
 
     /// The conversation associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Conversation")]
@@ -47,11 +47,11 @@ pub struct Utc {
 
     /// The current hit points of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "CurrentHitPoints")]
-    pub current_hit_points: Option<NwValue<i32>>,
+    pub current_hit_points: Option<NwValue<i16>>,
 
     /// The decay time for the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "DecayTime")]
-    pub decay_time: Option<NwValue<i32>>,
+    pub decay_time: Option<NwValue<u32>>,
 
     /// The deity associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Deity")]
@@ -63,7 +63,7 @@ pub struct Utc {
 
     /// The dexterity attribute of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Dex")]
-    pub dexterity: Option<NwValue<i32>>,
+    pub dexterity: Option<NwValue<u8>>,
 
     /// Indicates whether the creature is disarmable.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Disarmable")]
@@ -75,7 +75,7 @@ pub struct Utc {
 
     /// The faction ID associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "FactionID")]
-    pub faction_id: Option<NwValue<i32>>,
+    pub faction_id: Option<NwValue<u16>>,
 
     /// The list of feats associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "FeatList")]
@@ -87,7 +87,7 @@ pub struct Utc {
 
     /// The fortitude bonus of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "fortbonus")]
-    pub fortitude_bonus: Option<NwValue<i32>>,
+    pub fortitude_bonus: Option<NwValue<i16>>,
 
     /// The gender of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Gender")]
@@ -99,11 +99,11 @@ pub struct Utc {
 
     /// The total hit points of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "HitPoints")]
-    pub hit_points: Option<NwValue<i32>>,
+    pub hit_points: Option<NwValue<i16>>,
 
     /// The intelligence attribute of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Int")]
-    pub intelligence: Option<NwValue<i32>>,
+    pub intelligence: Option<NwValue<u8>>,
 
     /// Indicates whether the creature is interruptable.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Interruptable")]
@@ -127,7 +127,7 @@ pub struct Utc {
 
     /// The lawful/chaotic alignment of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "LawfulChaotic")]
-    pub lawful_chaotic: Option<NwValue<i32>>,
+    pub lawful_chaotic: Option<NwValue<u8>>,
 
     /// Indicates whether the creature is lootable.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Lootable")]
@@ -135,11 +135,11 @@ pub struct Utc {
 
     /// The maximum hit points of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "MaxHitPoints")]
-    pub max_hit_points: Option<NwValue<i32>>,
+    pub max_hit_points: Option<NwValue<i16>>,
 
     /// The natural armor class of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "NaturalAC")]
-    pub natural_ac: Option<NwValue<i32>>,
+    pub natural_ac: Option<NwValue<u8>>,
 
     /// Indicates whether the creature is not subject to permanent death.
     #[serde(skip_serializing_if = "Option::is_none", rename = "NoPermDeath")]
@@ -147,11 +147,11 @@ pub struct Utc {
 
     /// The palette ID associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "PaletteID")]
-    pub palette_id: Option<NwValue<i32>>,
+    pub palette_id: Option<NwValue<u8>>,
 
     /// The perception range of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "PerceptionRange")]
-    pub perception_range: Option<NwValue<i32>>,
+    pub perception_range: Option<NwValue<u8>>,
 
     /// The phenotype ID associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Phenotype")]
@@ -163,15 +163,15 @@ pub struct Utc {
 
     /// The portrait ID associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "PortraitId")]
-    pub portrait_id: Option<NwValue<i32>>,
+    pub portrait_id: Option<NwValue<u16>>,
 
     /// The race ID associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Race")]
-    pub race: Option<NwValue<i32>>,
+    pub race: Option<NwValue<u8>>,
 
     /// The reflex bonus of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "refbonus")]
-    pub reflex_bonus: Option<NwValue<i32>>,
+    pub reflex_bonus: Option<NwValue<i16>>,
 
     /// The script to be executed when the creature is attacked.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ScriptAttacked")]
@@ -231,7 +231,7 @@ pub struct Utc {
 
     /// The sound set file associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "SoundSetFile")]
-    pub sound_set_file: Option<NwValue<i32>>,
+    pub sound_set_file: Option<NwValue<u16>>,
 
     /// The list of special abilities associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "SpecAbilityList")]
@@ -239,11 +239,11 @@ pub struct Utc {
 
     /// The ID of the starting package associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "StartingPackage")]
-    pub starting_package: Option<NwValue<i32>>,
+    pub starting_package: Option<NwValue<u8>>,
 
     /// The strength attribute value of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Str")]
-    pub strength: Option<NwValue<i32>>,
+    pub strength: Option<NwValue<u8>>,
 
     /// The subrace associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Subrace")]
@@ -255,7 +255,7 @@ pub struct Utc {
 
     /// The new tail ID associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Tail_New")]
-    pub tail_new: Option<NwValue<i32>>,
+    pub tail_new: Option<NwValue<u32>>,
 
     /// The list of templates associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "TemplateList")]
@@ -271,15 +271,15 @@ pub struct Utc {
 
     /// The willpower bonus of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "willbonus")]
-    pub will_bonus: Option<NwValue<i32>>,
+    pub will_bonus: Option<NwValue<i16>>,
 
     /// The new wings ID associated with the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Wings_New")]
-    pub wings_new: Option<NwValue<i32>>,
+    pub wings_new: Option<NwValue<u32>>,
 
     /// The wisdom attribute value of the creature.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Wis")]
-    pub wisdom: Option<NwValue<i32>>,
+    pub wisdom: Option<NwValue<u8>>,
 }
 
 /// A creature Class
@@ -347,15 +347,15 @@ pub struct MemorizedSpell {
 
     /// Spell value
     #[serde(skip_serializing_if = "Option::is_none", rename = "Spell")]
-    pub spell: Option<NwValue<i32>>,
+    pub spell: Option<NwValue<u16>>,
 
     /// Spell flags
     #[serde(skip_serializing_if = "Option::is_none", rename = "SpellFlags")]
-    pub flags: Option<NwValue<i32>>,
+    pub flags: Option<NwValue<u16>>,
 
     /// Spell meta-magic value
     #[serde(skip_serializing_if = "Option::is_none", rename = "SpellMetaMagic")]
-    pub meta_magic: Option<NwValue<i32>>,
+    pub meta_magic: Option<NwValue<u8>>,
 }
 
 /// A creature item.
@@ -371,11 +371,11 @@ pub struct Item {
 
     /// X-coordinate for the position in the repository
     #[serde(skip_serializing_if = "Option::is_none", rename = "Repos_PosX")]
-    pub repos_pos_x: Option<NwValue<i32>>,
+    pub repos_pos_x: Option<NwValue<u16>>,
 
     /// Y-coordinate for the position in the repository
     #[serde(skip_serializing_if = "Option::is_none", rename = "Repos_Posy")]
-    pub repos_pos_y: Option<NwValue<i32>>,
+    pub repos_pos_y: Option<NwValue<u16>>,
 }
 
 /// A creature equippable item.
@@ -399,7 +399,7 @@ pub struct Feat {
 
     /// Feat value
     #[serde(skip_serializing_if = "Option::is_none", rename = "Feat")]
-    pub feat: Option<NwValue<u32>>,
+    pub feat: Option<NwValue<u16>>,
 }
 
 /// A creature skill.
@@ -411,7 +411,7 @@ pub struct Skill {
 
     /// Skill rank value
     #[serde(skip_serializing_if = "Option::is_none", rename = "Rank")]
-    pub rank: Option<NwValue<u32>>,
+    pub rank: Option<NwValue<u8>>,
 }
 
 /// A creature special ability.
@@ -423,15 +423,15 @@ pub struct SpecialAbility {
 
     /// Spell value
     #[serde(skip_serializing_if = "Option::is_none", rename = "Spell")]
-    pub spell: Option<NwValue<i32>>,
+    pub spell: Option<NwValue<u16>>,
 
     /// Spell caster level value
     #[serde(skip_serializing_if = "Option::is_none", rename = "SpellCasterLevel")]
-    pub caster_level: Option<NwValue<i32>>,
+    pub caster_level: Option<NwValue<u8>>,
 
     /// Spell flags value
     #[serde(skip_serializing_if = "Option::is_none", rename = "SpellFlags")]
-    pub flags: Option<NwValue<i32>>,
+    pub flags: Option<NwValue<u8>>,
 }
 
 /// Represents a template for a specific purpose.
