@@ -10,7 +10,7 @@ use super::*;
 pub struct Uti {
     /// The additional cost of the item.
     #[serde(skip_serializing_if = "Option::is_none", rename = "AddCost")]
-    pub add_cost: Option<NwValue<i32>>,
+    pub add_cost: Option<NwValue<u32>>,
 
     /// The base item of the item.
     #[serde(skip_serializing_if = "Option::is_none", rename = "BaseItem")]
@@ -18,7 +18,7 @@ pub struct Uti {
 
     /// The number of charges the item has.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Charges")]
-    pub charges: Option<NwValue<i32>>,
+    pub charges: Option<NwValue<u8>>,
 
     /// Comment for the item.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Comment")]
@@ -26,7 +26,7 @@ pub struct Uti {
 
     /// The cost of the item.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Cost")]
-    pub cost: Option<NwValue<i32>>,
+    pub cost: Option<NwValue<u32>>,
 
     /// Indicates if the item is cursed.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Cursed")]
@@ -50,11 +50,11 @@ pub struct Uti {
 
     /// The model part 1 of the item.
     #[serde(skip_serializing_if = "Option::is_none", rename = "ModelPart1")]
-    pub model_part1: Option<NwValue<i32>>,
+    pub model_part1: Option<NwValue<u8>>,
 
     /// The palette ID of the item.
     #[serde(skip_serializing_if = "Option::is_none", rename = "PaletteID")]
-    pub palette_id: Option<NwValue<i32>>,
+    pub palette_id: Option<NwValue<u8>>,
 
     /// Indicates if the item is a plot item.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Plot")]
@@ -66,7 +66,7 @@ pub struct Uti {
 
     /// The stack size of the item.
     #[serde(skip_serializing_if = "Option::is_none", rename = "StackSize")]
-    pub stack_size: Option<NwValue<i32>>,
+    pub stack_size: Option<NwValue<u16>>,
 
     /// Indicates if the item is stolen.
     #[serde(skip_serializing_if = "Option::is_none", rename = "Stolen")]
