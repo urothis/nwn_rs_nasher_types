@@ -93,7 +93,7 @@ pub struct AreaProperty {
 
   /// Music delay (serialized as "MusicDelay")
   #[serde(skip_serializing_if = "Option::is_none", rename = "MusicDelay")]
-  pub music_delay: Option<NwValue<u32>>,
+  pub music_delay: Option<NwValue<i32>>,
 
   /// Nighttime music (serialized as "MusicNight")
   #[serde(skip_serializing_if = "Option::is_none", rename = "MusicNight")]
@@ -932,7 +932,7 @@ pub struct Waypoint {
 
   /// Appearance field (serialized as "Appearance")
   #[serde(skip_serializing_if = "Option::is_none", rename = "Appearance")]
-  pub appearance: Option<NwValue<u8>>,
+  pub appearance: Option<NwValue<i32>>,
 
   /// Description field (serialized as "Description")
   #[serde(skip_serializing_if = "Option::is_none", rename = "Description")]
