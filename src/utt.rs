@@ -27,7 +27,7 @@ pub struct Utt {
 
   /// Faction associated with the trigger.
   #[serde(skip_serializing_if = "Option::is_none", rename = "Faction")]
-  pub faction: Option<NwValue<u8>>,
+  pub faction: Option<NwValue<u32>>,
 
   /// Height of the trigger highlight.
   #[serde(skip_serializing_if = "Option::is_none", rename = "HighlightHeight")]
@@ -47,7 +47,7 @@ pub struct Utt {
 
   /// Load screen ID associated with the trigger.
   #[serde(skip_serializing_if = "Option::is_none", rename = "LoadScreenID")]
-  pub load_screen_id: Option<NwValue<u32>>,
+  pub load_screen_id: Option<NwValue<u16>>,
 
   /// Localized name of the trigger.
   #[serde(skip_serializing_if = "Option::is_none", rename = "LocalizedName")]
@@ -71,7 +71,7 @@ pub struct Utt {
 
   /// Portrait ID associated with the trigger.
   #[serde(skip_serializing_if = "Option::is_none", rename = "PortraitId")]
-  pub portrait_id: Option<NwValue<u32>>,
+  pub portrait_id: Option<NwValue<u16>>,
 
   /// Script heartbeat associated with the trigger.
   #[serde(skip_serializing_if = "Option::is_none", rename = "ScriptHeartbeat")]

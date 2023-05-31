@@ -12,7 +12,7 @@ use super::*;
 pub struct Ifo {
   /// Expansion pack
   #[serde(skip_serializing_if = "Option::is_none", rename = "Expansion_Pack")]
-  pub expansion_pack: Option<NwValue<u8>>,
+  pub expansion_pack: Option<NwValue<u16>>,
 
   /// List of module areas
   #[serde(skip_serializing_if = "Option::is_none", rename = "Mod_Area_list")]
@@ -27,7 +27,7 @@ pub struct Ifo {
 
   /// module creator ID
   #[serde(skip_serializing_if = "Option::is_none", rename = "Mod_Creator_ID")]
-  pub mod_creator_id: Option<NwValue<u32>>,
+  pub mod_creator_id: Option<NwValue<i32>>,
 
   /// module custom talk table
   #[serde(skip_serializing_if = "Option::is_none", rename = "Mod_CustomTlk")]
@@ -218,7 +218,7 @@ pub struct Ifo {
 
   /// module start year
   #[serde(skip_serializing_if = "Option::is_none", rename = "Mod_StartYear")]
-  pub mod_start_year: Option<NwValue<u16>>,
+  pub mod_start_year: Option<NwValue<u32>>,
 
   /// module tag
   #[serde(skip_serializing_if = "Option::is_none", rename = "Mod_Tag")]
@@ -226,7 +226,7 @@ pub struct Ifo {
 
   /// module version
   #[serde(skip_serializing_if = "Option::is_none", rename = "Mod_Version")]
-  pub mod_version: Option<NwValue<u8>>,
+  pub mod_version: Option<NwValue<u32>>,
 
   /// module XP scale
   #[serde(skip_serializing_if = "Option::is_none", rename = "Mod_XPScale")]

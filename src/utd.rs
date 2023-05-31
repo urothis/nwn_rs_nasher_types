@@ -14,7 +14,7 @@ pub struct Utd {
 
   /// Represents the appearance of the door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "Appearance")]
-  pub appearance: Option<NwValue<i32>>,
+  pub appearance: Option<NwValue<u32>>,
 
   /// Indicates whether the key is automatically removed when used to open the door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "AutoRemoveKey")]
@@ -22,7 +22,7 @@ pub struct Utd {
 
   /// Represents the difficulty class (DC) for closing and locking the door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "CloseLockDC")]
-  pub close_lock_dc: Option<NwValue<i32>>,
+  pub close_lock_dc: Option<NwValue<u8>>,
 
   /// Additional comments or notes about the door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "Comment")]
@@ -42,27 +42,27 @@ pub struct Utd {
 
   /// Represents the difficulty class (DC) for disarming any traps on the door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "DisarmDC")]
-  pub disarm_dc: Option<NwValue<i32>>,
+  pub disarm_dc: Option<NwValue<u8>>,
 
   /// The faction associated with the door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "Faction")]
-  pub faction: Option<NwValue<i32>>,
+  pub faction: Option<NwValue<u32>>,
 
   /// Represents the fortitude saving throw of the door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "Fort")]
-  pub fortitude: Option<NwValue<i32>>,
+  pub fortitude: Option<NwValue<u8>>,
 
   /// Represents the generic type of the door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "GenericType")]
-  pub generic_type: Option<NwValue<i32>>,
+  pub generic_type: Option<NwValue<u8>>,
 
   /// Represents the hardness of the door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "Hardness")]
-  pub hardness: Option<NwValue<i32>>,
+  pub hardness: Option<NwValue<u8>>,
 
   /// Represents the hit points (HP) of the door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "HP")]
-  pub hp: Option<NwValue<i32>>,
+  pub hp: Option<NwValue<i16>>,
 
   /// Indicates whether the door can be interrupted.
   #[serde(skip_serializing_if = "Option::is_none", rename = "Interruptable")]
@@ -82,11 +82,11 @@ pub struct Utd {
 
   /// Represents the door flags of the linked door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "LinkedToFlags")]
-  pub linked_to_flags: Option<NwValue<i32>>,
+  pub linked_to_flags: Option<NwValue<u8>>,
 
   /// The load screen ID associated with the door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "LoadScreenID")]
-  pub load_screen_id: Option<NwValue<i32>>,
+  pub load_screen_id: Option<NwValue<u32>>,
 
   /// Indicates whether the door is lockable.
   #[serde(skip_serializing_if = "Option::is_none", rename = "Lockable")]
@@ -162,7 +162,7 @@ pub struct Utd {
 
   /// The palette ID of the door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "PaletteID")]
-  pub palette_id: Option<NwValue<i32>>,
+  pub palette_id: Option<NwValue<u8>>,
 
   /// Indicates whether the door is related to a plot.
   #[serde(skip_serializing_if = "Option::is_none", rename = "Plot")]
@@ -170,11 +170,11 @@ pub struct Utd {
 
   /// The portrait ID associated with the door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "PortraitId")]
-  pub portrait_id: Option<NwValue<i32>>,
+  pub portrait_id: Option<NwValue<u16>>,
 
   /// The reference ID of the door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "Ref")]
-  pub ref_: Option<NwValue<i32>>,
+  pub ref_: Option<NwValue<u8>>,
 
   /// The tag of the door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "Tag")]
@@ -190,7 +190,7 @@ pub struct Utd {
 
   /// The trap detection difficulty class (DC) of the door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "TrapDetectDC")]
-  pub trap_detect_dc: Option<NwValue<i32>>,
+  pub trap_detect_dc: Option<NwValue<u8>>,
 
   /// Indicates whether the trap on the door is disarmable.
   #[serde(skip_serializing_if = "Option::is_none", rename = "TrapDisarmable")]
@@ -206,9 +206,9 @@ pub struct Utd {
 
   /// The trap type of the door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "TrapType")]
-  pub trap_type: Option<NwValue<i32>>,
+  pub trap_type: Option<NwValue<u8>>,
 
   /// The Will saving throw DC of the door.
   #[serde(skip_serializing_if = "Option::is_none", rename = "Will")]
-  pub will: Option<NwValue<i32>>,
+  pub will: Option<NwValue<u8>>,
 }

@@ -27,15 +27,15 @@ pub struct Uts {
 
   /// Hours associated with the sound.
   #[serde(skip_serializing_if = "Option::is_none", rename = "Hours")]
-  pub hours: Option<NwValue<u8>>,
+  pub hours: Option<NwValue<u32>>,
 
   /// Interval of the sound.
   #[serde(skip_serializing_if = "Option::is_none", rename = "Interval")]
-  pub interval: Option<NwValue<i32>>,
+  pub interval: Option<NwValue<u32>>,
 
   /// Interval variation of the sound.
   #[serde(skip_serializing_if = "Option::is_none", rename = "IntervalVrtn")]
-  pub interval_vrtn: Option<NwValue<i32>>,
+  pub interval_vrtn: Option<NwValue<u32>>,
 
   /// Localized name of the sound.
   #[serde(skip_serializing_if = "Option::is_none", rename = "LocName")]
@@ -55,7 +55,7 @@ pub struct Uts {
 
   /// Palette ID of the sound.
   #[serde(skip_serializing_if = "Option::is_none", rename = "PaletteID")]
-  pub palette_id: Option<NwValue<i16>>,
+  pub palette_id: Option<NwValue<u8>>,
 
   /// Pitch variation of the sound.
   #[serde(skip_serializing_if = "Option::is_none", rename = "PitchVariation")]
@@ -103,11 +103,11 @@ pub struct Uts {
 
   /// Volume of the sound.
   #[serde(skip_serializing_if = "Option::is_none", rename = "Volume")]
-  pub volume: Option<NwValue<u16>>,
+  pub volume: Option<NwValue<u8>>,
 
   /// Volume variation of the sound.
   #[serde(skip_serializing_if = "Option::is_none", rename = "VolumeVrtn")]
-  pub volume_vrtn: Option<NwValue<u32>>,
+  pub volume_vrtn: Option<NwValue<u8>>,
 }
 
 /// Represents a `Sound` structure.
