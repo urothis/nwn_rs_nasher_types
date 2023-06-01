@@ -210,6 +210,7 @@ pub struct LocalizedText {
 }
 
 /// a module to de/serialize u8 as bool
+#[doc(hidden)]
 pub mod bool_as_u8 {
   use serde::{self, Deserialize, Serializer, Deserializer, Serialize};
   use super::NwValue;
