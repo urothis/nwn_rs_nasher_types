@@ -1,6 +1,6 @@
 [package]
 name = "nwn_nasher_types"
-version = "0.2.2"
+version = "0.3.0"
 license = "MIT"
 description = "A library to parse and de/serialize the files from the nwn community tool, nasher"
 readme = "README.md"
