@@ -181,30 +181,64 @@ pub struct NwStruct<T> {
 #[derive(Debug, Serialize, Deserialize)]
 pub struct LocalizedText {
   /// The English version of the string.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "0")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "0")]
   pub english: Option<String>,
 
   /// The French version of the string.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "1")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "1")]
   pub french: Option<String>,
 
   /// The German version of the string.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "2")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "2")]
   pub german: Option<String>,
 
   /// The Italian version of the string.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "3")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "3")]
   pub italian: Option<String>,
 
   /// The Spanish version of the string.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "4")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "4")]
   pub spanish: Option<String>,
 
   /// The Polish version of the string.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "5")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "5")]
   pub polish: Option<String>,
 
   /// The id of the string.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "id")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "id")]
   pub id: Option<u32>,
+}
+
+/// a module to de/serialize u8 as bool
+pub mod bool_as_u8 {
+  use serde::{self, Deserialize, Serializer, Deserializer, Serialize};
+  use super::NwValue;
+
+  pub(crate) fn serialize<S>(value: &Option<NwValue<bool>>, serializer: S) -> Result<S::Ok, S::Error>
+  where
+      S: Serializer,
+  {
+      match value {
+          Some(NwValue { _type, value }) => {
+              let u8_value = if *value { 1 } else { 0 };
+              let nw_value = NwValue { _type: _type.clone(), value: u8_value };
+              nw_value.serialize(serializer)
+          },
+          None => serializer.serialize_none(),
+      }
+  }
+
+  pub(crate) fn deserialize<'de, D>(deserializer: D) -> Result<Option<NwValue<bool>>, D::Error>
+  where
+      D: Deserializer<'de>,
+  {
+      let nw_value: Result<NwValue<u8>, _> = Deserialize::deserialize(deserializer);
+      match nw_value {
+          Ok(NwValue { _type, value }) => {
+              let bool_value = value != 0;
+              Ok(Some(NwValue { _type, value: bool_value }))
+          },
+          Err(_) => Ok(None),
+      }
+  }
 }
