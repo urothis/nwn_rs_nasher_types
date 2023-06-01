@@ -6,7 +6,7 @@ use termdiff::{ArrowsColorTheme, DrawDiff};
 
 use nwn_nasher_types::*;
 
-#[test_each::file(glob = "assets/testing/*.json", glob = "assets/testing/modules/nwn-module-DungeonEternalX/src/**/*.uti.json", name(segments = 3, index, extension))]
+#[test_each::file(glob = "assets/testing/*.json", glob = "assets/testing/modules/**/src/**/*.json", name(segments = 3, index, extension))]
 fn serialize(content: &str, path: PathBuf) {
   let nw: Result<NwType, _> = serde_json::from_str(content);
   match nw {
@@ -17,7 +17,7 @@ fn serialize(content: &str, path: PathBuf) {
   }
 }
 
-#[test_each::file(glob = "assets/testing/*.json", glob = "assets/testing/modules/nwn-module-DungeonEternalX/src/**/*.uti.json", name(segments = 3, index, extension))]
+#[test_each::file(glob = "assets/testing/*.json", glob = "assets/testing/modules/**/src/**/*.json", name(segments = 3, index, extension))]
 fn round_trip(content: &str, path: PathBuf) {
   let nw: Result<NwType, _> = serde_json::from_str(content);
   match nw {
