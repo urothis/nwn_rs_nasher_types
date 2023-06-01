@@ -22,30 +22,30 @@ pub struct Entry {
   pub struct_id: u32,
 
   /// The challenge rating (CR) of the entry.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "CR")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "CR")]
   pub cr: Option<NwValue<Decimal>>,
 
   /// The faction associated with the entry.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "FACTION")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "FACTION")]
   pub faction: Option<NwValue<String>>,
 
   /// The ID of the entry.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "ID")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "ID")]
   pub id: Option<NwValue<u8>>,
 
   /// The list of sub-entries within the entry.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "LIST")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "LIST")]
   pub list: Option<NwValue<Vec<Entry>>>,
 
   /// The name of the entry.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "NAME")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "NAME")]
   pub name: Option<NwValue<String>>,
 
   /// The resource reference (ResRef) of the entry.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "RESREF")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "RESREF")]
   pub res_ref: Option<NwValue<String>>,
 
   /// The string reference (StrRef) associated with the entry.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "STRREF")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "STRREF")]
   pub string_ref: Option<NwValue<u32>>,
 }

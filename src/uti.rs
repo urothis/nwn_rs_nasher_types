@@ -9,75 +9,75 @@ use super::*;
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Uti {
   /// The additional cost of the item.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "AddCost")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "AddCost")]
   pub add_cost: Option<NwValue<u32>>,
 
   /// The base item of the item.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "BaseItem")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "BaseItem")]
   pub base_item: Option<NwValue<i32>>,
 
   /// The number of charges the item has.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "Charges")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Charges")]
   pub charges: Option<NwValue<u8>>,
 
   /// Comment for the item.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "Comment")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Comment")]
   pub comment: Option<NwValue<String>>,
 
   /// The cost of the item.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "Cost")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Cost")]
   pub cost: Option<NwValue<u32>>,
 
   /// Indicates if the item is cursed.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "Cursed")]
-  pub cursed: Option<NwValue<i32>>,
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Cursed", with = "bool_as_u8")]
+  pub cursed: Option<NwValue<bool>>,
 
   /// The localized identified description of the item.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "DescIdentified")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "DescIdentified")]
   pub desc_identified: Option<NwValue<LocalizedText>>,
 
   /// The localized description of the item.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "Description")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Description")]
   pub description: Option<NwValue<LocalizedText>>,
 
   /// Indicates if the item is identified.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "Identified")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Identified")]
   pub identified: Option<NwValue<i32>>,
 
   /// The localized name of the item.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "LocalizedName")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "LocalizedName")]
   pub localized_name: Option<NwValue<LocalizedText>>,
 
   /// The model part 1 of the item.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "ModelPart1")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "ModelPart1")]
   pub model_part1: Option<NwValue<u8>>,
 
   /// The palette ID of the item.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "PaletteID")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "PaletteID")]
   pub palette_id: Option<NwValue<u8>>,
 
   /// Indicates if the item is a plot item.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "Plot")]
-  pub plot: Option<NwValue<i32>>,
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Plot", with = "bool_as_u8")]
+  pub plot: Option<NwValue<bool>>,
 
   /// The list of properties of the item.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "PropertiesList")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "PropertiesList")]
   pub properties_list: Option<NwValue<Vec<Property>>>,
 
   /// The stack size of the item.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "StackSize")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "StackSize")]
   pub stack_size: Option<NwValue<u16>>,
 
   /// Indicates if the item is stolen.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "Stolen")]
-  pub stolen: Option<NwValue<i32>>,
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Stolen", with = "bool_as_u8")]
+  pub stolen: Option<NwValue<bool>>,
 
   /// The tag of the item.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "Tag")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Tag")]
   pub tag: Option<NwValue<String>>,
 
   /// The template resource reference (ResRef) of the item.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "TemplateResRef")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "TemplateResRef")]
   pub template_res_ref: Option<NwValue<String>>,
 }
 
@@ -85,6 +85,6 @@ pub struct Uti {
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Property {
   /// The unique identifier of the property.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "__struct_id")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "__struct_id")]
   pub struct_id: Option<u32>,
 }
