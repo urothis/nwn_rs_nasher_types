@@ -14,7 +14,7 @@ Add the following to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-nwn-nasher-types = "0.2"
+nwn-nasher-types = "0.3"
 ```
 
 ## Example

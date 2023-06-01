@@ -17,35 +17,35 @@ pub struct Jrl {
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Category {
   /// The unique identifier for the category.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "__struct_id")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "__struct_id")]
   pub struct_id: Option<u32>,
 
   /// The comment associated with the category.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "Comment")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Comment")]
   pub comment: Option<NwValue<String>>,
 
   /// The list of entries within the category.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "EntryList")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "EntryList")]
   pub entry_list: Option<NwValue<Vec<Entry>>>,
 
   /// The name of the category.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "Name")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Name")]
   pub name: Option<NwValue<LocalizedText>>,
 
   /// The picture associated with the category.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "Picture")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Picture")]
   pub picture: Option<NwValue<u16>>,
 
   /// The priority of the category.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "Priority")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Priority")]
   pub priority: Option<NwValue<u32>>,
 
   /// The tag associated with the category.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "Tag")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Tag")]
   pub tag: Option<NwValue<String>>,
 
   /// The XP (experience points) associated with the category.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "XP")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "XP")]
   pub xp: Option<NwValue<u32>>,
 }
 
@@ -53,18 +53,18 @@ pub struct Category {
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Entry {
   /// The unique identifier for the entry.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "__struct_id")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "__struct_id")]
   pub struct_id: Option<u32>,
 
   /// The end position of the entry.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "End")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "End")]
   pub end: Option<NwValue<u16>>,
 
   /// The ID of the entry.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "ID")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "ID")]
   pub id: Option<NwValue<u32>>,
 
   /// The text content of the entry.
-  #[serde(skip_serializing_if = "Option::is_none", rename = "Text")]
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Text")]
   pub text: Option<NwValue<LocalizedText>>,
 }
