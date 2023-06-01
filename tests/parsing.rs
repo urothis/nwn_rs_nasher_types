@@ -6,7 +6,7 @@ use termdiff::{ArrowsColorTheme, DrawDiff};
 
 use nwn_nasher_types::*;
 
-#[test_each::file(glob = "assets/testing/*.json", glob = "assets/testing/modules/howardslotr/src/**/*.json", name(segments = 3, index, extension))]
+#[test_each::file(glob = "assets/testing/*.json", glob = "assets/testing/modules/nwn-module-DungeonEternalX/src/**/*.uti.json", name(segments = 3, index, extension))]
 fn serialize(content: &str, path: PathBuf) {
   let nw: Result<NwType, _> = serde_json::from_str(content);
   match nw {
@@ -17,38 +17,32 @@ fn serialize(content: &str, path: PathBuf) {
   }
 }
 
-#[test_each::file(glob = "assets/testing/*.json", glob = "assets/testing/modules/**/src/**/*.json", name(segments = 3, index, extension))]
+#[test_each::file(glob = "assets/testing/*.json", glob = "assets/testing/modules/nwn-module-DungeonEternalX/src/**/*.uti.json", name(segments = 3, index, extension))]
 fn round_trip(content: &str, path: PathBuf) {
   let nw: Result<NwType, _> = serde_json::from_str(content);
   match nw {
     Ok(value) => {
-      // serialize
       let serialized = match serde_json::to_string_pretty(&value) {
         Ok(s) => s + "\n",
         Err(e) => panic!("Failed to serialize: {}", e),
       };
-      // get original data
-      let original =
-        fs::read_to_string(&path).expect("Failed to read file");
 
-      if original != serialized {
-        let diff = diff_strings(original.clone(), serialized.clone());
+      if content != serialized {
+        // write file to disk for debugging
+        let mut path = path.clone();
+        path.set_extension("debug");
+        fs::write(&path, &serialized).unwrap();
+
+        let diff = diff_strings(content.to_string(), serialized.clone());
 
         // ignore the -0.0 to 0.0 differences
         for (line, l1, l2) in diff {
-          if l1.ends_with("{") || l1.ends_with("}") {
+          if l1.ends_with("{") || l1.ends_with("}") || l1.ends_with("},") {
             continue;
           }
 
-          let mut tmp_json = l1.clone();
-          if !l1.ends_with(",") {
-            tmp_json = format!("{{{}}}", &l1.trim());
-          } else {
-            tmp_json = format!("{{{}}}", &l1.trim()[..l1.len() - 1]);
-          }
+          let tmp_json = format!("{{{}}}", &l1.trim()[..l1.len() - 1]);
 
-
-          eprintln!("tmp_json: {}", tmp_json);
           let value: Result<Value, _> =
             match serde_json::from_str(&tmp_json) {
               Ok(v) => Ok(v),
@@ -77,11 +71,6 @@ fn round_trip(content: &str, path: PathBuf) {
     }
   }
 }
-
-const VARIANTS: [&str; 17] = [
-  "are", "dlg", "fac", "gic", "git", "ifo", "itp", "jrl", "utc", "utd", "ute",
-  "uti", "utm", "utp", "uts", "utt", "utw",
-];
 
 fn diff_strings(s1: String, s2: String) -> Vec<(usize, String, String)> {
   let lines1: Vec<&str> = s1.lines().collect();

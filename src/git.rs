@@ -160,6 +160,10 @@ pub struct Door {
   #[serde(default, skip_serializing_if = "Option::is_none", rename = "Fort")]
   pub fortitude: Option<NwValue<u8>>,
 
+  /// The generic type of the door
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "GenericType")]
+  pub generic_type: Option<NwValue<u32>>,
+
   /// The generic type (new) of the door
   #[serde(default, skip_serializing_if = "Option::is_none", rename = "GenericType_New")]
   pub generic_type_new: Option<NwValue<u32>>,
@@ -725,7 +729,115 @@ pub struct Placeable {
 /// TODO
 /// Sound
 #[derive(Debug, Serialize, Deserialize)]
-pub struct Sound {}
+pub struct Sound {
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Active", with = "bool_as_u8")]
+  pub active: Option<NwValue<bool>>,
+
+  /// Continuous
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Continuous", with = "bool_as_u8")]
+  pub continuous: Option<NwValue<bool>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Elevation")]
+  pub elevation: Option<NwValue<Decimal>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "GeneratedType")]
+  pub generated_type: Option<NwValue<u32>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Hours")]
+  pub hours: Option<NwValue<u32>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Interval")]
+  pub interval: Option<NwValue<u32>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "IntervalVrtn")]
+  pub interval_vrtn: Option<NwValue<u32>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "LocName")]
+  pub location_name: Option<NwValue<LocalizedText>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Looping", with = "bool_as_u8")]
+  pub looping: Option<NwValue<bool>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "MaxDistance")]
+  pub max_distance: Option<NwValue<Decimal>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "MinDistance")]
+  pub min_distance: Option<NwValue<Decimal>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "PitchVariation")]
+  pub pitch_variation: Option<NwValue<Decimal>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Positional", with = "bool_as_u8")]
+  pub positional: Option<NwValue<bool>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Priority")]
+  pub priority: Option<NwValue<u8>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Random", with = "bool_as_u8")]
+  pub random: Option<NwValue<bool>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "RandomPosition", with = "bool_as_u8")]
+  pub random_position: Option<NwValue<bool>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "RandomRangeX")]
+  pub random_range_x: Option<NwValue<Decimal>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "RandomRangeY")]
+  pub random_range_y: Option<NwValue<Decimal>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Sounds")]
+  pub sounds: Option<NwValue<Vec<NwStruct<String>>>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Tag")]
+  pub tag: Option<NwValue<String>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "TemplateResRef")]
+  pub template_res_ref: Option<NwValue<String>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Times")]
+  pub times: Option<NwValue<u32>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Volume")]
+  pub volume: Option<NwValue<Decimal>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "VolumeVrtn")]
+  pub volume_vrtn: Option<NwValue<u32>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "XPosition")]
+  pub x_position: Option<NwValue<Decimal>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "YPosition")]
+  pub y_position: Option<NwValue<Decimal>>,
+
+  /// Active
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "ZPosition")]
+  pub z_position: Option<NwValue<Decimal>>,
+}
 
 /// TODO
 /// Store

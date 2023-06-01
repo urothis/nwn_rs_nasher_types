@@ -166,6 +166,10 @@ pub struct NwStruct<T> {
   #[serde(skip_serializing_if = "Option::is_none", rename = "__struct_id")]
   pub struct_id: Option<u32>,
 
+  /// The id of the string.
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "id")]
+  pub id: Option<u32>,
+
   /// Represents the type of the structured value
   #[serde(rename = "type")]
   pub _type: String,
@@ -205,8 +209,28 @@ pub struct LocalizedText {
   pub polish: Option<String>,
 
   /// The id of the string.
-  #[serde(default, skip_serializing_if = "Option::is_none", rename = "id")]
-  pub id: Option<u32>,
+  #[serde(default, rename = "id")]
+  pub id: u32,
+}
+
+/// Represents a template for a specific purpose.
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Variable {
+  /// Struct ID
+  #[serde(skip_serializing_if = "Option::is_none", rename = "__struct_id")]
+  pub struct_id: Option<u32>,
+
+  /// Name
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Name")]
+  pub name: Option<NwValue<String>>,
+
+  /// Type of the variable
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Type")]
+  pub _type: Option<NwValue<u32>>,
+
+  /// Value of the variable
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "Value")]
+  pub value: Option<NwValue<u32>>,
 }
 
 /// a module to de/serialize u8 as bool
