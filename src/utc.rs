@@ -271,6 +271,10 @@ pub struct Utc {
   #[serde(default, skip_serializing_if = "Option::is_none", rename = "TemplateResRef")]
   pub template_res_ref: Option<NwValue<String>>,
 
+  /// Variable Table associated with the creature.
+  #[serde(default, skip_serializing_if = "Option::is_none", rename = "VarTable")]
+  pub variable_table: Option<NwValue<Vec<Variable>>>,
+
   /// The walking rate of the creature.
   #[serde(default, skip_serializing_if = "Option::is_none", rename = "WalkRate")]
   pub walk_rate: Option<NwValue<i32>>,
